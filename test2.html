@@ -1,0 +1,87 @@
+<HTML>
+  <HEAD>
+    <TITLE>Test for the .NET Framework 3.5</TITLE>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8" />
+    <SCRIPT LANGUAGE="JavaScript">
+    <!--
+    var dotNETRuntimeVersion = "3.5.0.0";
+    
+    function init()
+    {
+      if (HasRuntimeVersion(dotNETRuntimeVersion))
+      {
+        result.innerHTML = 
+          "This machine has the correct version of the .NET Framework 3.5."
+      } 
+      else
+      {
+        result.innerHTML = 
+          "This machine does not have the correct version of the .NET Framework 3.5." +
+          " The required version is v" + dotNETRuntimeVersion + ".";
+      }
+      result.innerHTML += "\n\nThis machine's userAgent string is: " + 
+        navigator.userAgent + ".";
+    }
+    
+    //
+    // Retrieve the version from the user agent string and 
+    // compare with the specified version.
+    //
+    function HasRuntimeVersion(versionToCheck)
+    {
+      var userAgentString = 
+        navigator.userAgent.match(/.NET CLR [0-9.]+/g);
+
+      if (userAgentString != null)
+      {
+        var i;
+
+        for (i = 0; i < userAgentString.length; ++i)
+        {
+          if (CompareVersions(GetVersion(versionToCheck), 
+            GetVersion(userAgentString[i])) <= 0)
+            return true;
+        }
+      }
+
+      return false;
+    }
+
+    //
+    // Extract the numeric part of the version string.
+    //
+    function GetVersion(versionString)
+    {
+      var numericString = 
+        versionString.match(/([0-9]+)\.([0-9]+)\.([0-9]+)/i);
+      return numericString.slice(1);
+    }
+
+    //
+    // Compare the 2 version strings by converting them to numeric format.
+    //
+    function CompareVersions(version1, version2)
+    {
+      for (i = 0; i < version1.length; ++i)
+      {
+        var number1 = new Number(version1[i]);
+        var number2 = new Number(version2[i]);
+
+        if (number1 < number2)
+          return -1;
+
+        if (number1 > number2)
+          return 1;
+      }
+
+      return 0;
+    }
+    
+    -->
+    </SCRIPT>
+  </HEAD>
+  
+  <BODY onLoad="init()">
+    <div id="result" />
+  </BODY>
+</HTML>

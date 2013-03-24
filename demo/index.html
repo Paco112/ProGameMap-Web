@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Document sans titre</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+<br /><br /><br />
+<center>
+<table border="0" cellpadding="0" cellspacing="0" width="700">
+	<tr>
+    	<td>
+            <div class="shadowed">
+            <div class="inner-boundary">
+            
+                <img src="logoPgm.png" alt="" />
+            
+                <div style="margin-left:250px;"><h2>Lancement le 1 Nov. a 19h, soit dans..<br /></h2><label id="Compte"></label></div><br /><br />
+                <script type="text/JavaScript">
+                    var Affiche=document.getElementById("Compte");
+                    function Rebour() {
+                        var date1 = new Date();
+                        var date2 = new Date ("Nov 1 19:00:00 2009");
+                        var sec = (date2 - date1) / 1000;
+                        var n = 24 * 3600;
+                        if (sec > 0) {
+                            j = Math.floor (sec / n);
+                            h = Math.floor ((sec - (j * n)) / 3600);
+                            mn = Math.floor ((sec - ((j * n + h * 3600))) / 60);
+                            sec = Math.floor (sec - ((j * n + h * 3600 + mn * 60)));
+                            Affiche.innerHTML = "<h1><span style='color:#98c163'>" + j +" j </span>"+ h +" h "+ mn +" min "+ sec + " s</h1> ";
+                            window.status = "<h1>" + j +" j "+ h +" h "+ mn +" min "+ sec + " s</h1> ";
+                        }
+                        tRebour=setTimeout ("Rebour();", 1000);
+                    }
+                    Rebour();
+                </script>
+            
+            </div></div>
+		</td>
+    </tr>
+</table>
+</center>
+
+</body>
+</html>

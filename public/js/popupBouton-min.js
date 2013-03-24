@@ -1,0 +1,1 @@
+window.addEvent("domready",function(){$$("img.popup").each(function(b){var a=b.name;$(a+"_menu").setStyles({opacity:0,display:"block"});$(document.body).addEvent("click",function(c){if($(a+"_menu").get("opacity")==1&&!c.target.getParent(".menu1")){$(a+"_menu").fade("out")}});$(a).addEvent("click",function(){$(a+"_menu").fade("in")})})});

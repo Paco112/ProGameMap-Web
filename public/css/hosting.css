@@ -1,0 +1,144 @@
+/*******************************************
+/////////////////////// INDEXES MICROP
+*******************************************/
+
+#index-header { background-image:url(http://www.progamemap.com/public/images/index-header.png); width:949px; background-repeat:no-repeat;}
+
+#index-paiement {float:left; padding-top:110px; }
+#index-paiement img, img.vignette {padding-right:7px; padding-bottom:7px; border:none;}
+
+#index-plans {padding-left:226px; padding-top:127px;}
+#index-plan-basic, #index-plan-medium, #index-plan-premium {float:left; margin-left:3px; display:block;}
+
+#index-header-basic {background-image:url(http://www.progamemap.com/public/images/index-header-basic.png); width:236px; height:64px;}
+#index-header-medium {background-image:url(http://www.progamemap.com/public/images/index-header-medium.png); width:236px; height:64px;}
+#index-header-premium {background-image:url(http://www.progamemap.com/public/images/index-header-premium.png); width:236px; height:64px;}
+#index-header-starter {background-image:url(http://www.progamemap.com/public/images/index-header-starter.png); width:236px; height:64px;}
+
+.index-content-basic {background-color:#fff; width:207px; border-left:1px solid #bbbbbb; border-right:1px solid #bbbbbb; padding-top:10px; padding-left:17px; padding-right:10px;}
+.index-footer-basic {background-image:url(http://www.progamemap.com/public/images/index-footer-basic.png); width:236px; height:11px;}
+
+ul.liste-inclus-plans {list-style-type: none;	padding: 0;margin: 0; padding-bottom:5px; font-size:12px;}
+ul.liste-inclus-plansspecial {list-style-type: none;	padding: 0;margin: 0; padding-bottom:5px; font-size:11px;}
+ul.liste-inclus-plans li {padding-left: 20px; padding-top:4px; background: url(http://www.progamemap.com/public/images/liste.png) no-repeat left center;}
+.prix-microp {float:left; width:105px;}
+.boutons-microp {margin-left:108px;}
+.boutons-microp img {padding-top:4px;}
+
+
+#sub-plans {}
+#index-domaine {float:left; margin-left:4px; }
+#index-pointsforts {margin-left:335px; }
+/*#index-pointsforts {margin-left:574px; margin-top:242px;}*/
+
+#index-header-domaine {background-image:url(http://www.progamemap.com/public/images/index-header-domaine.png); width:322px; height:47px; }
+#index-content-domaine {background-color:#fff; width:310px; border-left:1px solid #bbbbbb; border-right:1px solid #bbbbbb; padding-top:10px; padding-left:10px;}
+#index-footer-domaine {background-image:url(http://www.progamemap.com/public/images/index-footer-domaine.png); width:322px; height:11px;}
+
+#index-domaine-www {background-image:url(http://www.progamemap.com/public/images/index-domaine-www.png); background-repeat:no-repeat; width:310px; height:124px;  }
+#index-domaine-www form { padding-left:120px; padding-top:13px;}
+.subtitle {padding-left:10px;}
+
+#index-plan-special {margin-top:242px; margin-left:3px;}
+#index-header-planspecial {background-image:url(http://www.progamemap.com/public/images/index-header-planspecial.png); width:714px; height:35px; }
+#index-content-planspecial {background-color:#fff; width:697px; border-left:1px solid #bbbbbb; border-right:1px solid #bbbbbb; padding-left:15px;
+height:60px;}
+#index-footer-planspecial {background-image:url(http://www.progamemap.com/public/images/index-footer-planspecial.png); width:714px; height:14px;}
+
+table.table-planspecial tr td {padding-left:15px; font-size:11px;}
+
+
+#index-header-pointsforts {background-image:url(http://www.progamemap.com/public/images/index-header-pointsforts.png); width:383px; height:35px; }
+#index-content-pointsforts {background-color:#fff; width:366px; border-left:1px solid #bbbbbb; border-right:1px solid #bbbbbb; padding-top:10px; padding-left:15px;
+height:277px;}
+#index-content-pointsforts a { text-decoration:none; color:#005ca2;}
+#index-content-pointsforts a:hover { text-decoration:none; color:#41a2eb;}
+
+#index-footer-pointsforts {background-image:url(http://www.progamemap.com/public/images/index-footer-pointsforts.png); width:383px; height:14px;}
+
+#pf-left {float:left;}
+#pf-right{margin-left:185px;}
+
+
+#index-header-client {background-image:url(http://www.progamemap.com/public/images/index-header-client.png); width:222px; height:46px;}
+#index-header-banques {background-image:url(http://www.progamemap.com/public/images/index-header-banques.png); width:222px; height:46px;}
+.index-content-client {background-color:#fff; width:190px; border-left:1px solid #bbbbbb; border-right:1px solid #bbbbbb; padding-top:10px; padding-left:15px;padding-right:15px;}
+.index-content-client a { color:#005CA2; text-decoration:none;} .index-content-client a:hover { color:#0033FF;}
+.index-footer-client {background-image:url(http://www.progamemap.com/public/images/index-footer-client.png); width:222px; height:16px;}
+
+#index-header-affiliation {background-image:url(http://www.progamemap.com/public/images/index-header-affiliation.png); width:222px; height:46px;}
+
+
+#bg-accueil {background-image:url(http://www.progamemap.com/public/images/bg_accueil.png); background-repeat:repeat-x;}
+#accueil-centre {float:left;width:795px; margin-top:5px;}
+#accueil-droite {background-image:url(http://www.progamemap.com/public/images/bg_login.png); background-repeat:no-repeat; width:147px; height:453px; margin-left:800px; border-right:1px solid #E9E9E9;}
+
+#ofr-micropaiement {background-image:url(http://www.progamemap.com/public/images/ofr_micropaiement.png); background-repeat:no-repeat;}
+#ofr-pro {background-image:url(http://www.progamemap.com/public/images/ofr_pro.png); background-repeat:no-repeat; margin-left:10px;}
+#ofr-dedies {background-image:url(http://www.progamemap.com/public/images/ofr_dedies.png); background-repeat:no-repeat;}
+#ofr-prives{background-image:url(http://www.progamemap.com/public/images/ofr_prives.png); background-repeat:no-repeat;margin-left:9px;}
+#ofr-ecommerce{background-image:url(http://www.progamemap.com/public/images/ofr_ecommerce.png); background-repeat:no-repeat;margin-left:13px;}
+#ofr-emails{background-image:url(http://www.progamemap.com/public/images/ofr_emails.png); background-repeat:no-repeat;margin-left:9px;}
+
+#ofr-micropaiement, #ofr-pro{width:391px; height:196px; float:left; margin-top:5px; }
+#ofr-emails, #ofr-ecommerce, #ofr-prives, #ofr-dedies {width:190px; height:196px; float:left; margin-top:7px;}
+
+#savoirplus2 {padding-left:277px; padding-top:163px;}
+#savoirplus4 {padding-left:90px; padding-top:115px;}
+
+#col-login {
+	background-image:url(http://www.progamemap.com/public/images/login.png);
+	background-repeat:no-repeat;
+	padding-top:45px;
+	padding-left:8px;
+}
+
+#col-inclus {
+	background-image:url(http://www.progamemap.com/public/images/inclus.png);
+	background-repeat:no-repeat;
+	width:148px;
+	padding-top:25px;
+}
+
+ul.inclus, ul.packs {
+	list-style-image:url(http://www.progamemap.com/public/images/point_1.jpg);
+	margin:0;
+	padding:0;
+	margin-left:18px;
+}
+ul.inclus li {
+	padding-top:3px;
+	padding-bottom:3px;
+	border-bottom:1px dotted #ccc;
+	width:110px;
+}
+
+ul.packs li {
+	padding-top:3px;
+	padding-bottom:3px;
+	width:140px;
+}
+
+
+
+#footer {
+	clear:both;
+	background-image:url(progamemap.com/public/images/footer.png);
+	height:53px;
+	width:919px;
+	margin-top:30px;
+	padding-top:9px;
+	padding-left:25px;
+}
+
+#footer, #footer a {color:#0d68b9; text-decoration:none;}
+#footer a:hover {color:#143365;}
+
+#copyright, #copyright a {margin-top:13px; color:white; text-decoration:none}
+#copyright a:hover {color:#96c3ee;} 
+
+#footer img, .absmiddle {vertical-align:middle;margin-bottom: .25em; }
+
+img{
+	border:0;
+}

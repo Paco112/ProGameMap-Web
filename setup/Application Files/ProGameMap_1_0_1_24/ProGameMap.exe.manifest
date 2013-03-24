@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly manifestVersion="1.0" xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity version="1.0.1.24" name="ProGameMap.exe" publicKeyToken="7c05e37cb9e0c282" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ProGameMap" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ProGameMap.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet class="System.Security.PermissionSet" version="1" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- Options du manifeste de contrôle de compte d'utilisateur
+             Si vous souhaitez modifier le niveau du contrôle de compte d'utilisateur Windows, remplacez le 
+             noeud requestedExecutionLevel par l'une des propositions suivantes :
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Si vous souhaitez utiliser la virtualisation de fichiers et du Registre pour la 
+            compatibilité descendante, supprimez le noeud requestedExecutionLevel.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ionic.Zip.dll" size="419840">
+      <assemblyIdentity name="Ionic.Zip" version="1.8.4.5" publicKeyToken="EDBE51AD942A3F5C" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>KdG3nSzouo2XplBxDhDtKSAkWJ0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="307200">
+      <assemblyIdentity name="MySql.Data" version="6.0.4.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>7TnElypLku/6RFX4mgL/F81gxHA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ProGameMap.exe" size="35840">
+      <assemblyIdentity name="ProGameMap" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Iap3WblR0pqhe2fMCPlrMDS3MNU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=ProGameMap" issuerKeyHash="1d394e8e3ab5e9f1fb9921b3431543e288810066" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>9T+q4TRtVbGCU/GfambVL/EzjZQ=</DigestValue></Reference></SignedInfo><SignatureValue>pBCwNS3YniHsSuC+CUTMR4hyBQMXoyuY0Qo0mEMa9KDUrkSs1vd03JVcl+MLgwAqUTH9AbuzC0V9saosAi7PnVoqumLSzPDVGW6RecoFstcDHdZ9Xla1Ok+vOZpsq2can1ZlqtXo1r+zJ8j+j9EwmCGfQmmGaMxbdT1yrWAlGgk=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tGnU4vPaT5vEemwQzC3j5Cinas+JY0L6QU7XMnedo3fv7GcfziuP+qwL6adFoQfnq6flujW6LnnHmzRUOCq14PCqiY8MF/2yJGRuPsl6eA48efIMo95fKRS2cOVHrAzCav3gFl838/iMG3VAk1Ge4F9e5an4QTonTPQAD1srWWk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="948d33f12fd5666a9ff15382b1556d34e1aa3ff5" Description="" Url=""><as:assemblyIdentity version="1.0.1.24" name="ProGameMap.exe" publicKeyToken="7c05e37cb9e0c282" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ProGameMap</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>v6Ozf/leAbTpr5gq4I5nX8YITXg=</DigestValue></Reference></SignedInfo><SignatureValue>H/k2/mpryRRDVP/MNtadWYfQ6nC1n4+Nc+lEA3aPFYQob1TELwPNLAUKnvluV5kb+dH1Nye0y3Wz21j7AUMG4yhnG9rgc5R2EC/sj2hZVGNYCkq69c865x9VBeN8AcpIt5pKVkEHp1x034LlCqqMLmIrS71B91rJXPn9dS5ygzA=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tGnU4vPaT5vEemwQzC3j5Cinas+JY0L6QU7XMnedo3fv7GcfziuP+qwL6adFoQfnq6flujW6LnnHmzRUOCq14PCqiY8MF/2yJGRuPsl6eA48efIMo95fKRS2cOVHrAzCav3gFl838/iMG3VAk1Ge4F9e5an4QTonTPQAD1srWWk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBujCCAWSgAwIBAgIQijdbMWA4TaJHbT335AIoZjANBgkqhkiG9w0BAQQFADAWMRQwEgYDVQQDEwtSb290IEFnZW5jeTAeFw0wOTExMjQyMTMwMTVaFw0zOTEyMzEyMzU5NTlaMBUxEzARBgNVBAMTClByb0dhbWVNYXAwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALRp1OLz2k+bxHpsEMwt4+Qop2rPiWNC+kFO1zJ3naN37+xnH84rj/qsC+mnRaEH56un5bo1ui55x5s0VDgqteDwqomPDBf9siRkbj7JengOPHnyDKPeXykUtnDlR6wMwmr94BZfN/P4jBt1QJNRnuBfXuWp+EE6J0z0AA9bK1lpAgMBAAGjSzBJMEcGA1UdAQRAMD6AEBLkCS0GHR1PAI1hIdwWZGOhGDAWMRQwEgYDVQQDEwtSb290IEFnZW5jeYIQBjdsAKoAZIoRz7jUqlw19DANBgkqhkiG9w0BAQQFAANBAHVuVYibtGvdwqfLW3or0V/ExWiOkhvSywjo521GWlz5JMktjqqr2Uqn4t9zc9Vx3Ad9e7VX7d3hMmSGvaM/rrg=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

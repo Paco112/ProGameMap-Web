@@ -1,0 +1,70 @@
+.gistsubmit {
+	display : block;
+	background : transparent url(http://www.progamemap.com/public/images/gistbtn_normal_left.png) no-repeat 0 0;
+	float : left;
+	font-size : 12px;
+	font-weight : bold;
+	text-align : center;
+	border : 0;
+	height : 39px;
+	color :#FFF;
+	position : relative;
+	margin-right : 5px;
+}
+
+.gistsubmit:hover {
+	text-decoration : none;
+}
+
+.gistsubmit > input {
+	display : block;
+	max-width : 164px;
+	overflow : hidden;
+	font-style : normal;
+	white-space : nowrap;
+	background : none;
+	border : 0;
+	margin : 0 !important;
+	padding : 0;
+	color : #FFF;
+	font-weight : bold;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size : 12px;
+	padding-right : 3px;
+	padding-left : 18px;
+	padding-top : 12px;
+	padding-bottom : 11px;
+	cursor : pointer;
+}
+
+.gistsubmit > a {
+	display : block;
+	max-width : 164px;
+	overflow : hidden;
+	font-style : normal;
+	white-space : nowrap;
+	background : none;
+	border : 0;
+	margin : 0 !important;
+	padding : 0;
+	color : #FFF;
+	font-weight : bold;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size : 12px;
+	padding-right : 3px;
+	padding-left : 18px;
+	padding-top : 10px;
+	padding-bottom : 11px;
+	cursor : pointer;
+	text-decoration:none;
+}
+
+.gistsubmit > span {
+	display : block;
+	position : absolute;
+	top : 0;
+	right : -12px;
+	width : 12px;
+	height : 100%;
+	background : transparent url(http://www.progamemap.com/public/images/gistbtn_normal_right.png) no-repeat 0 0;
+}

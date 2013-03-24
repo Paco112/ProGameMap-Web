@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* Onglet Menu CSS */
+
+.menu_onglet { /* boite qui contient le menu (les onglets) */
+  border-bottom:solid 1px #bcbcbc ; /* crée le trait noir en-dessous des onglets */
+  padding-top:2px ; /* marge intérieure haute */
+  padding-bottom:0px;
+  width:100%;} /* marge intérieure basse */
+
+.onglet { /* style des onglets inactifs */
+  margin:5px 0px 0px 5px ; /* marge extérieure */
+  font-size : 12px ; /* taille de la police des onglets */
+  line-height:27px; /* Hauteur du background */
+  float:left ; /* boite en mode float, pour pouvoir en définir la largeur */
+  width:98px ; /* largeur de la boite float */
+  heigh:32px;
+  top:1px;
+  position:relative;
+  background : url(http://www.progamemap.com/public/images/onglet.gif) bottom no-repeat; /* image de fond de la boite float, calée en bas */
+  text-decoration:none ; /* les lien dans les onglets ne sont pas soulignés */
+  text-align:center} /* Le texte des onglets est centré */
+
+a.onglet:hover {
+  color:white; /* lors du survol d'un lien, la police devient verte */
+  text-decoration:none ;
+  background: url(http://www.progamemap.com/public/images/onglet.gif) bottom no-repeat #98c163;
+}
+
+div.onglet:hover {
+  color:white; /* lors du survol d'un lien, la police devient verte */
+  text-decoration:none ;
+  background: url(http://www.progamemap.com/public/images/onglet.gif) bottom no-repeat #98c163;
+} 
+
+.onglet-actif { /* style de l'onglet de la page active */
+  background: url(http://www.progamemap.com/public/images/onglet.gif) bottom no-repeat #f4f4f4;
+} /*on efface le trait inférieur du menu */
+
+.spacer {clear:both} /* force le retour à la ligne après des boites float */
+
+/** Menu latéral **/
+.boxMenu {
+	background:url(http://www.progamemap.com/public/images/box_sidebar_bg.gif) repeat-y;
+	width:170px;
+}
+
+.boxMenu .topMenu{
+	background:url(http://www.progamemap.com/public/images/bgTopHeader.png) no-repeat;
+	height:29px;
+	width:170px;
+	padding-left:15px;
+}
+
+.boxMenu .Footer{
+	background:url(http://www.progamemap.com/public/images/box_sidebar_bgbottom.png) #FFF;
+	width:170px;
+	height:7px;
+}
+
+/** Box Pack **/
+.boxPack {
+	background:url(http://www.progamemap.com/public/images/Packbox_sidebar_bg.gif) repeat-y;
+	width:770px;
+	margin-left:5px;
+}
+
+.boxPack .topLeftPack{
+	background:url(http://www.progamemap.com/public/images/5w9-left.png) no-repeat;
+	height:29px;
+	width:5px;
+}
+
+.boxPack .topMiddlePack{
+	background:url(http://www.progamemap.com/public/images/5w9-middle.png) repeat-x;
+	height:29px;
+}
+
+.boxPack .topRightPack{
+	background:url(http://www.progamemap.com/public/images/5w9-right.png) no-repeat;
+	height:29px;
+	width:5px;
+}
+
+.boxPack .footerLeftPack{
+	background:url(http://www.progamemap.com/public/images/5w9-bottom_left.png) no-repeat;
+	height:7px;
+	width:5px;
+}
+
+.boxPack .footerMiddlePack{
+	background:url(http://www.progamemap.com/public/images/5w9-bottom_middle.png) repeat-x;
+	height:7px;
+}
+
+.boxPack .footerRightPack{
+	background:url(http://www.progamemap.com/public/images/5w9-bottom_right.png) no-repeat;
+	height:7px;
+	width:5px;
+}
+
+
+/** Pagination **/
+ul.pagination {
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	display:inline;
+	list-style-type: none;
+	list-style-image: none;
+	list-style:none;
+}
+
+ul.pagination li{
+	float:left;
+}
+
+ul.pagination li a.numPage {
+	font-size: 15px;
+	padding:2px 8px 2px 8px;
+	line-height:32px; /*hauteur de l'image de fond*/
+	background:#d6e2b9;
+	color:#687f2f;
+	text-decoration:none;
+	text-align:center;
+	margin-left:5px;
+}
+
+ul.pagination li a.numPage:hover {
+	background:#839f40;
+	color:#ffe88c;
+}
+
+ul.pagination li a.hover {
+	background:#839f40;
+	color:#ffe88c;
+}
+
+ul.pagination li.navPage {
+	margin:5px 0 0 5px;
+}

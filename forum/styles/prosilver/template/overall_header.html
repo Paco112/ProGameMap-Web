@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="{S_USER_LANG}" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="copyright" content="2000, 2002, 2005, 2007 phpBB Group" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+{META}
+<title>{SITENAME} &bull;
+<!-- IF S_IN_MCP -->
+{L_MCP} &bull;
+<!-- ELSEIF S_IN_UCP -->
+{L_UCP} &bull;
+<!-- ENDIF -->
+{PAGE_TITLE}</title>
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = '{LA_JUMP_PAGE}:';
+	var on_page = '{ON_PAGE}';
+	var per_page = '{PER_PAGE}';
+	var base_url = '{A_BASE_URL}';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '{A_COOKIE_SETTINGS}';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+
+	<!-- IF S_USER_PM_POPUP -->
+		if ({S_NEW_PM})
+		{
+			var url = '{UA_POPUP_PM}';
+			window.open(url.replace(/&amp;/g, '&'), '_phpbbprivmsg', 'height=225,resizable=yes,scrollbars=yes, width=400');
+		}
+	<!-- ENDIF -->
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	}
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	}
+
+// ]]>
+</script>
+<script type="text/javascript" src="{T_TEMPLATE_PATH}/forum_fn.js"></script>
+<link href="{T_THEME_PATH}/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="{T_STYLESHEET_LINK}" rel="stylesheet" type="text/css" media="screen, projection" />
+<link href="{T_THEME_PATH}/normal.css" rel="stylesheet" type="text/css" title="A" />
+<link href="{T_THEME_PATH}/medium.css" rel="alternate stylesheet" type="text/css" title="A+" />
+<link href="{T_THEME_PATH}/large.css" rel="alternate stylesheet" type="text/css" title="A++" />
+<!-- IF S_CONTENT_DIRECTION eq 'rtl' -->
+<link href="{T_THEME_PATH}/bidi.css" rel="stylesheet" type="text/css" media="screen, projection" />
+<!-- ENDIF -->
+<script type="text/javascript" src="http://www.progamemap.com/public/js/mootools.js"></script>
+<script type="text/javascript" src="http://www.progamemap.com/public/js/{LOGJS}"></script>
+<script type="text/javascript" src="http://www.progamemap.com/public/js/pub.js"></script>
+<script type='text/javascript' src='http://www.progamemap.com/public/js/arianne.js'></script>
+<link rel="stylesheet" type="text/css" href="http://www.progamemap.com/public/css/default.css" />
+<link rel="stylesheet" type="text/css" href="http://www.progamemap.com/public/css/forum.css" />
+<link rel="stylesheet" type="text/css" href="http://www.progamemap.com/public/css/login.css" />
+</head><body style="font: 11px tahoma, Geneva, sans-serif; padding-top:8px;">
+<center>
+<input id="sa" name="sa" type="hidden" title="" value="{SAAA}">
+<input id="lo" name="lo" type="hidden" title="" value="{U_LOGIN_LOGOUT}" />
+<table width="985" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><div style="position:absolute; top:0;">
+        <ul id="navMenuTop">
+          <li><a href="http://www.progamemap.com/">Accueil</a></li>
+          <li><a href="http://www.progamemap.com/logiciel/">Logiciel</a></li>
+          <li><a href="http://www.progamemap.com/forum/" id="menuTopHover">Forum</a></li>
+          <li><a href="http://www.progamemap.com/communaute/">Communaut&eacute;</a></li>
+          <li><a href="http://www.progamemap.com/contact/">Contact</a></li>
+          {UPLOAD}
+        </ul>
+      </div></td>
+    <td><!--<div style="position:absolute; top:3.5px; margin-left:670px;"><table><tr>
+        	<td><a href="http://www.progamemap.com/forum/ucp.php?mode=lang&switch=fr"><img src="http://www.progamemap.com/public/images/drapeau_fr.jpg" alt="" /></a></td>
+        	<td style="padding-left:10px;"><a href="http://www.progamemap.com/forum/ucp.php?mode=lang&switch=en"><img src="http://www.progamemap.com/public/images/drapeau_en.jpg" alt="" /></a></td>
+  </tr>
+</table>
+</div>--></td>
+  </tr>
+  <tr>
+    <td width="243px"><div style="margin:37px 0 0 0;"><a href="http://www.progamemap.com/"><img src="http://www.progamemap.com/public/images/logo.png" alt="ProGameMap.com" border="0" /></a></div></td>
+    <td><div style="margin:40px 0 0 10px;">
+        <div id="advertContainer"></div>
+      </div>
+      <!--<img src="http://www.progamemap.com/public/images/Ad.jpg" alt="ProGameMap.com" style="border:1px solid #999" /></div>--></td>
+    <!--<td valign="middle" align="center">
+            <div class="load_pub" style="display:block;">
+                <img src="http://www.progamemap.com/public/images/pub-loader.gif" width="56" height="21">
+            </div>
+            <div class="pub" style="width:468px; height:60px; display:none;">
+                <img src="http://www.noname.fr/bandeaux-pub/images/v7ndotcom-elursrebmem-nn.gif" width="468" height="60">
+            </div>
+        </td>-->
+  </tr>
+  <tr>
+    <td colspan="2"><table border="0" cellspacing="0" cellpadding="0" style="margin-top:5px;" >
+        <tr>
+          <td style="width:8px"></td>
+          <td style="background:url(http://www.progamemap.com/public/images/FilArianneBG.jpg) repeat-x;width:978px;" align="left"><ul id="FilArianne2">
+              <li id="liFilArianneBoutonDEBUT"></li>
+              <li id="FAB_1" class="liFilArianneBouton"><a id="FAB_1_A" href="http://www.progamemap.com/"><img src="http://www.progamemap.com/public/images/home.png" alt="home" style="padding-top:6px" />&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+              <li id="liFilArianneBoutonFLECHE1" class="liFilArianneBoutonFLECHE"></li>
+              <li id="FAB_2" class="liFilArianneBouton"><a id="FAB_2_A" href="http://www.progamemap.com/forum/">Forum</a></li>
+               <li id="liFilArianneBoutonFLECHE2" class="liFilArianneBoutonFLECHE"></li>
+              <li><span class="arianneSpan">Bienvenue sur le Forum ProGameMap</span></li>
+            </ul>
+            <div id="loginLink">{LOGIN_LINKK}</div>
+            <!-- LOGIN BOX -->
+            <div style="position:absolute; margin:30px 0 0 580px; z-index:999; display:none" id="LoginBox">
+              <div class='frame'>
+                <div class='frame_top'>
+                  <div class='corners_left'></div>
+                  <div class='inner'>
+                    <h2>Connexion</h2>
+                  </div>
+                  <div class='corners_right'></div>
+                </div>
+                <div class='frame_content'>
+                  <div class="flash_boxes" id="flash_boxes">
+                    <div id="usernameCheck"></div>
+                    <div id="passwordCheck"></div>
+                    <div id="loginCheck"></div>
+                  </div>
+                  <form action="" class="onboard_form" method="post">
+                    <div class='field text_field'>
+                      <label for="log-username">Username</label>
+                      <input name="log-username" type="text" class="autotab behavior log_" id="log-username" />
+                    </div>
+                    <div class='field text_field'>
+                      <label for="log-password">Mot de passe</label>
+                      <input name="log-password" type="password" class="log_" id="log-password" />
+                    </div>
+                    <!--<div class='field check_box_field'>
+                        <input id="remember_me" name="remember_me" type="checkbox" value="1" />
+
+                        <label for="remember_me">Se souvenir de moi</label>
+                      </div>-->
+                    <div class='actions' style="float:right">
+                      <div class="right gistsubmit">
+                        <input class="log_" name="log-submit" id="log-submit" type="submit"  value="&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;" />
+                        <span></span></div>
+                      <div class="clear"></div>
+                    </div>
+                    <input id="time_zone_offset" name="time_zone_offset" type="hidden" value="-8" />
+                  </form>
+                  <br />
+                  <br />
+                  <!--<br />
+                    <div class='onboard_actions' style="position:absolute;">
+                      <table border="0" align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td width="185"><a href="" class="left">Mot de passe oubli&eacute; ?</a></td>
+
+                          <td align="right"><div class='right'> Avez-vous un compte ?&nbsp;<a href="">Inscription</a></div></td>
+                        </tr>
+                      </table>
+                    </div>-->
+                  <br />
+                </div>
+                <div class='frame_bottom'>
+                  <div class='corners_left'></div>
+                  <div class='inner'></div>
+                  <div class='corners_right'></div>
+                </div>
+              </div>
+            </div>
+            <!-- LOGIN BOX END -->
+            <!--<div id="prettysearch">
+                        <input id="prettysearch" type="text" value="Rechercher" onFocus="if(this.value=='Rechercher')this.value=''" onblur="if(this.value=='')this.value='Rechercher'"/>
+                      </div>-->
+            &nbsp;&nbsp;&nbsp;</td>
+          <td width="10px" style="background:url(http://www.progamemap.com/public/images/FilArianneEnd.png) no-repeat left;"></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<!--logo End-->
+<!--Body Start-->
+<table width="985" border="0" align="center" cellpadding="0" cellspacing="0" style="padding-top:6px">
+<tr>
+  <td valign="top"><br />
+    <div class="shadowed">
+    <div class="inner-boundary">
+    <div id="bodybody">
+    <div id="wrap">
+    <a id="top" name="top" accesskey="t"></a>
+    <div id="page-header"> <br />
+      <div class="navbar">
+        <div class="inner"><span class="corners-top"><span></span></span>
+          <ul class="linklist navlinks">
+            <li class="icon-home"><a href="{U_INDEX}" accesskey="h">{L_INDEX}</a>
+              <!-- BEGIN navlinks -->
+              <strong>&#8249;</strong> <a href="{navlinks.U_VIEW_FORUM}">{navlinks.FORUM_NAME}</a>
+              <!-- END navlinks -->
+            </li>
+            <!-- IF U_EMAIL_TOPIC -->
+            <li class="rightside"><a href="{U_EMAIL_TOPIC}" title="{L_EMAIL_TOPIC}" class="sendemail">{L_EMAIL_TOPIC}</a></li>
+            <!-- ENDIF -->
+            <!-- IF U_EMAIL_PM -->
+            <li class="rightside"><a href="{U_EMAIL_PM}" title="{L_EMAIL_PM}" class="sendemail">{L_EMAIL_PM}</a></li>
+            <!-- ENDIF -->
+            <!-- IF U_PRINT_TOPIC -->
+            <li class="rightside"><a href="{U_PRINT_TOPIC}" title="{L_PRINT_TOPIC}" accesskey="p" class="print">{L_PRINT_TOPIC}</a></li>
+            <!-- ENDIF -->
+            <!-- IF U_PRINT_PM -->
+            <li class="rightside"><a href="{U_PRINT_PM}" title="{L_PRINT_PM}" accesskey="p" class="print">{L_PRINT_PM}</a></li>
+            <!-- ENDIF -->
+          </ul>
+          <!-- IF not S_IS_BOT and S_USER_LOGGED_IN -->
+          <ul class="linklist leftside">
+            <li class="icon-ucp"> <a href="{U_PROFILE}" title="{L_PROFILE}" accesskey="u">{L_PROFILE}</a>
+              <!-- IF S_DISPLAY_PM -->
+              (<a href="{U_PRIVATEMSGS}">{PRIVATE_MESSAGE_INFO}</a>)
+              <!-- ENDIF -->
+              &bull; <a href="{U_SEARCH_SELF}">{L_SEARCH_SELF}</a>
+              <!-- IF U_RESTORE_PERMISSIONS -->
+              &bull; <a href="{U_RESTORE_PERMISSIONS}">{L_RESTORE_PERMISSIONS}</a>
+              <!-- ENDIF -->
+            </li>
+          </ul>
+          <!-- ENDIF -->
+          <ul class="linklist rightside">
+            <li class="icon-faq"><a href="{U_FAQ}" title="{L_FAQ_EXPLAIN}">{L_FAQ}</a></li>
+            <!-- IF not S_IS_BOT -->
+            <!-- IF not S_USER_LOGGED_IN and S_REGISTER_ENABLED -->
+            <!--<li class="icon-register"><a href="{U_REGISTER}">{L_REGISTER}</a></li>-->
+            <!-- ENDIF -->
+            <!--<li class="icon-logout"><a href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" accesskey="l">{L_LOGIN_LOGOUT}</a></li>-->
+            <!-- ENDIF -->
+          </ul>
+          <span class="corners-bottom"><span></span></span></div>
+      </div>
+    </div>
+    <a name="start_here"></a>
+    <div id="page-body">
+    <!-- IF S_BOARD_DISABLED and S_USER_LOGGED_IN and (U_MCP or U_ACP) -->
+    <div id="message" class="rules">
+      <div class="inner"><span class="corners-top"><span></span></span> <strong>{L_INFORMATION}:</strong> {L_BOARD_DISABLED} <span class="corners-bottom"><span></span></span></div>
+    </div>
+    <!-- ENDIF -->

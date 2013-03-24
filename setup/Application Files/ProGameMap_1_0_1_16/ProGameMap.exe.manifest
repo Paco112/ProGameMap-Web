@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly manifestVersion="1.0" xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity version="1.0.1.16" name="ProGameMap.exe" publicKeyToken="d4a719ea74eb3c12" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ProGameMap" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ProGameMap.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet class="System.Security.PermissionSet" version="1" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- Options du manifeste de contrôle de compte d'utilisateur
+             Si vous souhaitez modifier le niveau du contrôle de compte d'utilisateur Windows, remplacez le 
+             noeud requestedExecutionLevel par l'une des propositions suivantes :
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Si vous souhaitez utiliser la virtualisation de fichiers et du Registre pour la 
+            compatibilité descendante, supprimez le noeud requestedExecutionLevel.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="3.5.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Data.DataSetExtensions" version="3.5.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Net" version="3.5.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Xml.Linq" version="3.5.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ionic.Zip.dll" size="419840">
+      <assemblyIdentity name="Ionic.Zip" version="1.8.4.5" publicKeyToken="EDBE51AD942A3F5C" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>KdG3nSzouo2XplBxDhDtKSAkWJ0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="307200">
+      <assemblyIdentity name="MySql.Data" version="6.0.4.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>7TnElypLku/6RFX4mgL/F81gxHA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ProGameMap.exe" size="51712">
+      <assemblyIdentity name="ProGameMap" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>spHsQeaZ34u+vvb9YLCrwJ0pHX8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=ADMIN\Administrateur" issuerKeyHash="13317d72ceb43ee9f0e55d144ce40a9b00e3fa14" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>IIWEsxea7JUoV5tswElPeNut9Rk=</DigestValue></Reference></SignedInfo><SignatureValue>FcI2xNYir7EpJQEYB7kkc83eKIIEL+RPy6+V/JnotLdn5+953KIkpGJaEbYMltpWBkOuKc9Y88vlF4qBLfNm3h5o+0YY/pkz0wqv9hpXheITeC94vDUhZAPhCP7lBdGAbON3OMqiigbYSuDKrZkSmq9c5RnRNw+fgYLZxzUW7HE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>o2S+8135F8crxWHeBn4RH6Y+zr0+9QvKSlEJFHuzQ8RSE+1TObDQyk0SU88igqrO/N34E+5TudiCtm8hXSESr6bdcz2Sto5vsQ4qUaAABmUP3POT+u1IrBtq2/jh+oLar2ON9CBOcfwBxcQMvQHeqb6F2uoFErBFymyFJz0Z3Dc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="19f5addb784f49c06c9b572895ec9a17b3848520" Description="" Url=""><as:assemblyIdentity version="1.0.1.16" name="ProGameMap.exe" publicKeyToken="d4a719ea74eb3c12" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ADMIN\Administrateur</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>M2JxPCXxXPI9YXcReQJ0xYRX1EI=</DigestValue></Reference></SignedInfo><SignatureValue>PIjq1uMD9UFAZtzZKuubeohA7VjrJ6yzA91EzjXxoz1uOpiB74ucJpSK5xph3VfRW8p5QijO97rGgfmXj/m9pyoIN5y5p06cWaEx/i2l5GZtAbsm+MQaVXJjtNf+J6Za7yxtfV0p5Pv2FPAQPgOuxC2lCgasMp40CCgOjbl8htk=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>o2S+8135F8crxWHeBn4RH6Y+zr0+9QvKSlEJFHuzQ8RSE+1TObDQyk0SU88igqrO/N34E+5TudiCtm8hXSESr6bdcz2Sto5vsQ4qUaAABmUP3POT+u1IrBtq2/jh+oLar2ON9CBOcfwBxcQMvQHeqb6F2uoFErBFymyFJz0Z3Dc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQMmYVzrHESIFGjEoz1YJLHjANBgkqhkiG9w0BAQUFADAzMTEwLwYDVQQDHigAQQBEAE0ASQBOAFwAQQBkAG0AaQBuAGkAcwB0AHIAYQB0AGUAdQByMB4XDTA5MDkwNDIzNDEzN1oXDTEwMDkwNTA1NDEzN1owMzExMC8GA1UEAx4oAEEARABNAEkATgBcAEEAZABtAGkAbgBpAHMAdAByAGEAdABlAHUAcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAo2S+8135F8crxWHeBn4RH6Y+zr0+9QvKSlEJFHuzQ8RSE+1TObDQyk0SU88igqrO/N34E+5TudiCtm8hXSESr6bdcz2Sto5vsQ4qUaAABmUP3POT+u1IrBtq2/jh+oLar2ON9CBOcfwBxcQMvQHeqb6F2uoFErBFymyFJz0Z3DcCAwEAATANBgkqhkiG9w0BAQUFAAOBgQCKT3HYmA9SWpnb1LKQt/h6rE1cJQsG1Am64keocOhzG/IQhkoCmNHFJA7RKObwi5WvIoC3Fr7bHlyfCJU+VH+iYyihTLPHJvAjiYRk0t68NhWqvBcjbS/3tcwGzY5RT0yjJvCTwmWO73//Tpik18NsUGwCb+Tm3Psd10b1oJtNcA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

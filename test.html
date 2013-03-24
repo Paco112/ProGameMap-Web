@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Document sans titre</title>
+<link rel="stylesheet" type="text/css" href="public/css/default.css" />
+<script type="text/javascript" src="public/js/mootools.js"></script>
+<script type="text/javascript">
+	window.addEvent('domready',function() {
+		
+		$$('li.liFilArianneBouton').each(function(element){
+			element.addEvent('mouseover', function(){
+				var tab_btn = element.id.split("_");
+				var i = parseInt(tab_btn[1]);
+				var i2 = i-1;			
+				$('FAB_'+i+'_A').setStyle('background', 'url(http://www.progamemap.com/public/images/FilArianneBoutonBG.jpg) 0 -27px repeat-x');
+				$('liFilArianneBoutonFLECHE'+i).setStyle('background', 'url(http://www.progamemap.com/public/images/FilArianneBoutonend.jpg) 0 -27px no-repeat');
+				if(i2!=0)
+				{
+					$('liFilArianneBoutonFLECHE'+i2).setStyle('background', 'url(http://www.progamemap.com/public/images/FilArianneBoutonend.jpg) 0 -54px no-repeat');
+				}
+				else
+				{
+					$('liFilArianneBoutonDEBUT').setStyle('background', 'url(http://www.progamemap.com/public/images/FilArianneBegin.png) 0 -27px no-repeat');
+				}
+
+			});
+			
+			element.addEvent('mouseout', function(){
+				var tab_btn = element.id.split("_");
+				var i = parseInt(tab_btn[1]);
+				var i2 = i-1;
+				$('FAB_'+i+'_A').setStyle('background', 'url(http://www.progamemap.com/public/images/FilArianneBoutonBG.jpg) 0 0px repeat-x');
+				$('liFilArianneBoutonFLECHE'+i).setStyle('background', 'url(http://www.progamemap.com/public/images/FilArianneBoutonend.jpg) 0 0px no-repeat');
+				if(i2!=0)
+				{
+					$('liFilArianneBoutonFLECHE'+i2).setStyle('background', 'url(http://www.progamemap.com/public/images/FilArianneBoutonend.jpg) 0 0px no-repeat');
+				}
+				else
+				{
+					$('liFilArianneBoutonDEBUT').setStyle('background', 'url(http://www.progamemap.com/public/images/FilArianneBegin.png) 0 0px no-repeat');
+				}
+			});
+		});
+	});
+
+</script>
+</head>
+<body>
+<input type="hidden" id="arianneButton" value="2" />
+<br />
+<br />
+<br />
+<table border="0" cellspacing="0" cellpadding="0" style="margin-top:5px;">
+  <tr>
+    <td width="13px"></td>
+    <td width="973" style="background:url(public/images/FilArianneBG.jpg) repeat-x;" align="left">
+    <ul id="FilArianne2">
+        
+        <li id="liFilArianneBoutonDEBUT"></li>
+        
+        <li id="FAB_1" class="liFilArianneBouton"><a id="FAB_1_A" href="http://www.progamemap.com/">
+            <img src="http://www.progamemap.com/public/images/home.png" alt="home" border="0" style="padding-top:6px" />&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </li>
+        
+        <li id="liFilArianneBoutonFLECHE1"></li>
+        
+        <li id="FAB_2" class="liFilArianneBouton"><a id="FAB_2_A" href="../../fr/logiciel/">Logiciel&nbsp;&nbsp;&nbsp;</a></li>
+
+        <li id="liFilArianneBoutonFLECHE2"></li>
+        
+        <li><span>S&eacute;lectionnez un jeu</span></li>
+        
+        <li id="liFilArianneBoutonFLECHE3"></li>
+      
+      </ul></td>
+    <td width="10px" style="background:url(../../public/images/FilArianneEnd.png) no-repeat left;"></td>
+  </tr>
+</table>
+<br />
+<br />
+<br />
+</body>
+</html>

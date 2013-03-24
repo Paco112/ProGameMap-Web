@@ -1,0 +1,651 @@
+/* Resets */
+
+::selection {
+	background: transparent; /* Safari */
+	}
+::-moz-selection {
+	background: transparent; /* Firefox */
+}
+
+:focus {
+	outline: 0;
+}
+
+body {
+	background:url(http://www.progamemap.com/public/images/header_bg_slice_long.png) repeat-x top #d2d1d0;
+	font: 13px/19px tahoma, Geneva, sans-serif;
+	overflow-y: scroll;
+	min-height:100%;
+}
+
+img{
+	border:0;
+}
+
+p {
+	padding-bottom: 19px;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+}
+
+blockquote, q {
+	quotes: "" "";
+}
+
+acronym {
+	cursor: help;
+	border-bottom: 1px dashed #333;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+hr {
+	display: none;
+}
+
+html[xmlns] .clearfix {
+	display: block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+/* Link Styles */
+a:link, a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #000;
+	text-decoration: none;
+}
+
+/* post link */
+h1 a:link, h1 a:visited {
+	color: #191919;
+}
+
+h1 a:hover {
+	color: #191919;
+}
+
+h1 a:active {
+	color: #191919;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+	color:#191919;
+	font-family: MgOpen Modata, Arial, Tahoma;
+	line-height: 1em;
+}
+
+h1 {
+	font-size: 40px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	background: url(http://www.progamemap.com/public/images/h1-border.jpg) repeat-x left bottom;
+}
+
+h2 {
+	font-size: 27px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	background: url(http://www.progamemap.com/public/images/h1-border.jpg) repeat-x left bottom;
+}
+
+h2.noBorder {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	background: none;
+}
+
+h3 {
+	font-size: 21px;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+
+h4 {
+	font-size: 15px;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	letter-spacing:0.1em;
+	padding-top: 10px;
+}
+
+#footer_wrap {
+	position: relative;
+	min-width: 982px;
+	padding: 0 10px;
+	background: url(http://www.progamemap.com/public/images/footer.png) repeat-x 0 0;
+	height: 304px;
+}
+
+/** Top menu **/
+ul#navMenuTop {
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	display:inline;
+	list-style-type: none;
+	list-style-image: none;
+	list-style:none;
+}
+
+#navMenuTop li {
+	float:left; /*pour IE*/
+}
+
+ul#navMenuTop li a {
+	font-size: 15px;
+	padding:0 20px 0 20px;
+	margin:0px 0 0 0;
+	line-height:32px; /*hauteur de l'image de fond*/
+	background:#1b1b1b;
+	color:#ededed;
+	text-decoration:none;
+	text-align:center;
+	display:block;
+	margin-left:10px;
+	-moz-border-radius : 5px 5px 0 0; 
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius : 5px 5px 0 0;
+}
+
+ul#navMenuTop li a:hover {
+	background:#ededed;
+	color:black;
+	text-decoration:none;
+	display:block;
+}
+
+ul#navMenuTop li a#menuTopHover {
+	background:#ededed;
+	color:black;
+	text-decoration:none;
+	display:block;
+}
+
+/** Fil d'arianne **/
+ul#FilArianne {
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	display:inline;
+	list-style-type: none;
+	list-style-image: none;
+	list-style:none;
+}
+
+#FilArianne li {
+	display:inline;
+	float:left; /*pour IE*/
+}
+
+ul#FilArianne li a {
+	FONT-SIZE: 11px;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	padding:0 0 0 10px;
+	line-height:24px; /*hauteur de l'image de fond*/
+	background:url(http://www.progamemap.com/public/images/FilArianneBoutonBG.jpg) 0 0 repeat-x;
+	color:white;
+	text-decoration:none;
+	text-align:center;
+	display:block;
+}
+
+ul#FilArianne li a:hover {
+	height:27px;
+	background:url(http://www.progamemap.com/public/images/FilArianneBoutonBG.jpg) 0 -27px repeat-x;
+	text-decoration:none;
+	display:block;
+}
+
+.FilArianneBoutonEND {
+	float:right;
+	display:block;
+	width:18px;
+	height:27px;
+	background:url(http://www.progamemap.com/public/images/FilArianneBoutonend.jpg) 0 0px no-repeat;
+}
+
+ul#FilArianne li a:hover .FilArianneBoutonEND {
+	display:block;
+	width:18px;
+	height:27px;
+	background:url(http://www.progamemap.com/public/images/FilArianneBoutonend.jpg) 0 -27px no-repeat;
+}
+
+.FilArianneBoutonDEB {
+	display:none;
+	float:left;
+	width:18px;
+	height:27px;
+}
+
+ul#FilArianne li a:hover .FilArianneBoutonDEB {
+	position:absolute;
+	margin-left:-28px;
+	display:block;
+	width:18px;
+	height:27px;
+	background:url(http://www.progamemap.com/public/images/FilArianneBoutonend.jpg) 0 -54px no-repeat;
+}
+
+ul#FilArianne2 li span {
+	padding:0 0 0 10px;
+	line-height:24px; /*hauteur de l'image de fond*/
+	background:url(http://www.progamemap.com/public/images/FilArianneBoutonBG.jpg) 0 0 repeat-x;
+	color:white;
+	text-decoration:none;
+	text-align:center;
+	display:block;
+	FONT-SIZE: 11px;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+#TopFilAriane {
+	FONT-SIZE: 11px;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	color:white;
+	text-decoration:none;
+}
+
+#ArianneBegin {
+	float:left;
+	position:relative;
+	left:-15px;
+	line-height:27px;
+	width:10px;
+	z-index:10;
+	background:url(http://www.progamemap.com/public/images/FilArianneBegin.png);
+}
+
+ul#FilArianne li a:hover #ArianneBegin {
+	line-height:27px;
+	width:10px;
+	background:url(http://www.progamemap.com/public/images/FilArianneBegin.png) 0 -27px no-repeat;
+}
+
+/** new **/
+ul#FilArianne2 {
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	display:inline;
+	list-style-type: none;
+	list-style-image: none;
+	list-style:none;
+}
+
+#FilArianne2 li {
+	display:inline;
+	float:left; /*pour IE*/
+}
+
+ul#FilArianne2 li a {
+	FONT-SIZE: 11px;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	padding:0 0 0 10px;
+	line-height:24px; /*hauteur de l'image de fond*/
+	background:url(http://www.progamemap.com/public/images/FilArianneBoutonBG.jpg) 0 0 repeat-x;
+	color:white;
+	text-decoration:none;
+	text-align:center;
+	display:block;
+}
+
+#liFilArianneBoutonDEBUT{
+	width:10px;
+	height:27px;
+	background:url(http://www.progamemap.com/public/images/FilArianneBegin.png);
+}
+
+#liFilArianneBoutonFLECHE1 {
+	display:block;
+	width:18px;
+	height:27px;
+	background:url(http://www.progamemap.com/public/images/FilArianneBoutonend.jpg) 0 0px no-repeat;
+}
+
+#liFilArianneBoutonFLECHE2 {
+	display:block;
+	width:18px;
+	height:27px;
+	background:url(http://www.progamemap.com/public/images/FilArianneBoutonend.jpg) 0 0px no-repeat;
+}
+
+ul#FilArianne2 li#liFilArianneBouton1 a:hover #liFilArianneBoutonFLECHE1{
+	background:url(http://www.progamemap.com/public/images/FilArianneBoutonend.jpg) 0 -27px no-repeat;
+}
+
+/** Content **/
+.shadowed {
+	border: 1px solid #bbbbbb;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius : 5px;
+}
+
+.shadowed div.inner-boundary {
+	margin: -2px 0px 0px -2px;
+	border: 1px solid #bbbbbb;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius : 5px;
+	background-color: #f4f4f4;
+	background-image: url(http://www.progamemap.com/public/images/white_line.png);
+	background-repeat: repeat-x;
+}
+
+.shadowed div.inner-boundary div.inner-border {
+	border: 1px solid #fefefe;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius : 5px;
+	background-color: #f4f4f4;
+}
+
+.entry {
+	float: left;
+	display: block;
+	padding: 0 40px 0 40px;
+	width: 617px;
+}
+
+blockquote {
+	font-style: italic;
+	background: #e0e0e0;
+	padding: 20px;
+	border: 1px solid #a5a5a5;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.blockquote {
+	border: 1px solid #a5a5a5;
+}
+
+.blockquote blockquote {
+	border-color: #fff;
+}
+
+.entry p {
+	margin-top:-10px;
+	text-align:justify;
+}
+
+.entry ul {
+	padding-bottom: 20px;
+	padding-top: 3px;
+}
+
+.entry ul li {
+	padding: 4px 0 2px 0;
+	padding-left: 35px;
+	background: url(http://www.progamemap.com/public/images/post-li.gif) no-repeat 10px 9px;
+}
+
+.entry li > ul {
+	padding-bottom: 0px;
+}
+
+.entry ol {
+	margin-left: 25px;
+	padding-left: 10px;
+	padding-bottom: 20px;
+	padding-top: 3px;
+}
+
+.entry ol li {
+	padding: 4px 0 2px 0px;
+	list-style: decimal;
+}
+
+.entry li > ol {
+	padding-bottom: 0px;
+}
+
+.top-image {
+	float: right;
+	padding-left: 20px;
+	margin-bottom: 20px;
+	background-color: #f4f4f4;
+}
+
+.postimage {
+	float: right;
+	margin-top:25px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	background-color: #f4f4f4;
+	border: 1px solid #a5a5a5;
+	padding: 1px;
+}
+
+.postimage img {
+	background: #e0e0e0;
+	padding: 9px;
+	float: right;
+}
+
+.postimage-left {
+	float: left;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	background-color: #f4f4f4;
+	border: 1px solid #a5a5a5;
+	padding: 1px;
+}
+
+.postimage-left img {
+	background: #e0e0e0;
+	padding: 9px;
+	float: left;
+}
+
+.postimage-center {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	border: 1px solid #a5a5a5;
+	padding: 1px;
+	width: auto;
+	background: #e0e0e0 url(http://flashden.net/images/common/backgrounds/white_line.png) repeat-x 0 0px;
+}
+
+.postimage-center img {
+	background: #e0e0e0;
+	padding: 9px;
+	margin: 0 auto;
+	display: block;
+	max-width: 595px;
+}
+
+.postmetadata {
+	position: relative;
+	background: #ededed url(http://www.progamemap.com/public/images/post-meta.png) no-repeat 0 0;
+	float: left;
+	display: block;
+	width: 617px;
+	border-top: 1px solid #d5d5d5;
+	border-bottom: 1px solid #d5d5d5;
+	padding: 11px 40px 10px 40px;
+	font-size: 11px;
+	line-height: 18px;
+}
+
+
+.the_author {
+	float:right;
+	right: 40px;
+}
+
+.the_author h4 {
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-right:0px;
+	margin-left:10px;
+	font-size: 16px;
+	text-transform: none;
+	color: #656565;
+	padding-top: 3px;
+	padding-bottom: 0;
+	padding-right: 0;
+}
+
+/** Compte **/
+#menuCompte{
+	background:#FFF;
+	-moz-border-radius : 5px;
+	-webkit-border-radius: 5px;
+	border-radius : 5px;
+	border:1px solid #CCC;
+	margin:10px 0 10px 10px;
+	padding:10px;
+}
+
+#menuCompte table th{
+	background:#CCC;
+	-moz-border-radius : 2px;
+	-webkit-border-radius: 2px;
+	border-radius : 2px;
+	padding-left:5px;
+}
+
+#menuCompte table tr td{
+	padding-left:5px;
+}
+
+#loginLink a{
+	FONT-SIZE: 11px;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	color:#FFF;
+	text-decoration:none;
+}
+
+#loginLink {
+	FONT-SIZE: 11px;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	color:#FFF;
+	float:right;
+	padding:0 10px 0 10px;
+	line-height:24px; /*hauteur de l'image de fond*/
+	text-align:center;
+	display:block;
+}
+
+#advertContainer{
+	position:relative;
+	width:746px;
+	height:118px;
+	background: url(http://www.progamemap.com/public/images/adbox.png) no-repeat 0 0;
+	padding:15px 0 0 9px;
+}
+
+.gistsubmit {
+	display : block;
+	background : transparent url(http://www.progamemap.com/public/images/gistbtn_normal_left.png) no-repeat 0 0;
+	float : left;
+	font-size : 12px;
+	font-weight : bold;
+	text-align : center;
+	border : 0;
+	height : 39px;
+	color :#FFF;
+	position : relative;
+	margin-right : 5px;
+}
+
+.gistsubmit:hover {
+	text-decoration : none;
+}
+
+.gistsubmit > input {
+	display : block;
+	max-width : 164px;
+	overflow : hidden;
+	font-style : normal;
+	white-space : nowrap;
+	background : none;
+	border : 0;
+	margin : 0 !important;
+	padding : 0;
+	color : #FFF;
+	font-weight : bold;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size : 12px;
+	padding-right : 3px;
+	padding-left : 18px;
+	padding-top : 12px;
+	padding-bottom : 11px;
+	cursor : pointer;
+}
+
+.gistsubmit > a {
+	display : block;
+	max-width : 164px;
+	overflow : hidden;
+	font-style : normal;
+	white-space : nowrap;
+	background : none;
+	border : 0;
+	margin : 0 !important;
+	padding : 0;
+	color : #FFF;
+	font-weight : bold;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size : 12px;
+	padding-right : 3px;
+	padding-left : 18px;
+	padding-top : 10px;
+	padding-bottom : 11px;
+	cursor : pointer;
+	text-decoration:none;
+}
+
+.gistsubmit > span {
+	display : block;
+	position : absolute;
+	top : 0;
+	right : -12px;
+	width : 12px;
+	height : 100%;
+	background : transparent url(http://www.progamemap.com/public/images/gistbtn_normal_right.png) no-repeat 0 0;
+}

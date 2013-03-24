@@ -1,0 +1,153 @@
+.notelink {	cursor: pointer; }
+
+.noteblockblack,
+.noteblock {
+	height: 16px;
+	width: 175px;
+	overflow: hidden;
+}
+
+.noteblockblack P,
+.noteblock P {
+	color: #333333;
+	font-weight: bold;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 12px;
+	margin: 0px;
+}
+
+.loading {
+	height: 16px;
+	background: url('./../images/working.gif') 50% 50% no-repeat;
+}
+
+.noteunit {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	height: 16px;
+	position: relative;
+	background: url('./../images/etoiles.gif') 0% 0% repeat-x;	
+	float: left;
+	margin-right: 8px;
+}
+
+.noteunit li{
+	font-size: 1px;
+    text-indent: -90000px;
+	padding: 0px;
+	margin: 0px;
+	/*\*/
+	float: left;
+	/* */
+}
+	
+.noteunit li a {
+	list-style-type: none;
+	outline: none;
+	display: block;
+	width: 8px;
+	height: 16px;
+	text-decoration: none;
+	text-indent: -9000px;
+	z-index: 20;
+	position: absolute;
+	padding: 0px;
+}
+
+.noteunit li a:hover{
+	background: url('./../images/etoiles.gif') 0% 50%;
+	z-index: 2;
+	left: 0px;
+}
+
+.noteunit a.etoile1 { left: 0px; }
+.noteunit a.etoile1:hover { left: 0px; width: 8px; }
+.noteunit a.etoile2 { left: 8px; width: 9px; }
+.noteunit a.etoile2:hover { left: 0px; width: 17px; }
+.noteunit a.etoile3 { left: 17px; }
+.noteunit a.etoile3:hover { left: 0px; width: 25px; }
+.noteunit a.etoile4 { left: 25px; width: 9px; }	
+.noteunit a.etoile4:hover { left: 0px; width: 34px }
+.noteunit a.etoile5 { left: 34px; }
+.noteunit a.etoile5:hover { left: 0px; width: 42px; }
+.noteunit a.etoile6 { left: 42px; width: 9px; }
+.noteunit a.etoile6:hover { left: 0px; width: 51px; }
+.noteunit a.etoile7 { left: 51px; }
+.noteunit a.etoile7:hover { left: 0px; width: 59px; }
+.noteunit a.etoile8 { left: 59px; width: 9px; }
+.noteunit a.etoile8:hover { left: 0px; width: 68px; }
+.noteunit a.etoile9 { left: 68px; }
+.noteunit a.etoile9:hover { left: 0px; width: 76px; }
+.noteunit a.etoile10 { left: 76px; width: 9px; }
+.noteunit a.etoile10:hover { left: 0px; width: 85px; }
+
+.noteunit li.notecurrent {
+	background: url('./../images/etoiles.gif') 0% 100%;
+	position: absolute;
+	height: 16px;
+	display: block;
+	text-indent: -9000px;
+	z-index: 1;
+	font-size: 1px;
+}
+
+.dejavote { color: #999; }
+.merci { color: #36AA3D; }
+.static { color: #5D3126; }
+
+/* Particularité notation sur fond noir */
+
+.noteblockblack {
+	width: 115px;
+}
+
+.noteblockblack P SPAN.libnote { display: none; }
+
+.noteblockblack P {
+	text-align: right;
+	color: #FFFFFF;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.noteblockblack .noteunit {
+	float: right;
+	margin-left: 8px;
+	margin-right: 0px;
+}
+
+.noteblockblack .loading { background-image: url('./../images/working_black.gif'); }
+
+.noteblockblack,
+.noteblockblack .loading,
+.noteblockblack .noteunit,
+.noteblockblack .noteunit li a,
+.noteblockblack .noteunit li.notecurrent { height: 12px; }
+
+.noteblockblack .noteunit li a { width: 6px; }
+
+.noteblockblack .noteunit,
+.noteblockblack .noteunit li a:hover,
+.noteblockblack .noteunit li.notecurrent { background-image: url('./../images/etoiles_black.gif'); }
+
+.noteblockblack .noteunit a.etoile1 { left: 0px; }
+.noteblockblack .noteunit a.etoile1:hover { left: 0px; width: 6px; }
+.noteblockblack .noteunit a.etoile2 { left: 6px; width: 7px; }
+.noteblockblack .noteunit a.etoile2:hover { left: 0px; width: 13px; }
+.noteblockblack .noteunit a.etoile3 { left: 13px; }
+.noteblockblack .noteunit a.etoile3:hover { left: 0px; width: 19px; }
+.noteblockblack .noteunit a.etoile4 { left: 19px; width: 7px; }	
+.noteblockblack .noteunit a.etoile4:hover { left: 0px; width: 26px }
+.noteblockblack .noteunit a.etoile5 { left: 26px; }
+.noteblockblack .noteunit a.etoile5:hover { left: 0px; width: 32px; }
+.noteblockblack .noteunit a.etoile6 { left: 32px; width: 7px; }
+.noteblockblack .noteunit a.etoile6:hover { left: 0px; width: 39px; }
+.noteblockblack .noteunit a.etoile7 { left: 39px; }
+.noteblockblack .noteunit a.etoile7:hover { left: 0px; width: 45px; }
+.noteblockblack .noteunit a.etoile8 { left: 45px; width: 7px; }
+.noteblockblack .noteunit a.etoile8:hover { left: 0px; width: 52px; }
+.noteblockblack .noteunit a.etoile9 { left: 52px; }
+.noteblockblack .noteunit a.etoile9:hover { left: 0px; width: 58px; }
+.noteblockblack .noteunit a.etoile10 { left: 58px; width: 7px; }
+.noteblockblack .noteunit a.etoile10:hover { left: 0px; width: 65px; }

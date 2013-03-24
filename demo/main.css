@@ -1,0 +1,155 @@
+@font-face {
+ font-family: MgOpen Modata;
+ src: url(http://www.progamemap.com/public/fonts/MGOPENM1.eot);
+}
+ @font-face {
+ font-family: MgOpen Modata;
+ src: url(http://www.progamemap.com/public/fonts/MgOpenModataRegular.ttf);
+}
+
+/* Resets */
+
+:focus {
+	outline: 0;
+}
+
+body {
+	background:url(header_bg_slice_long.png) repeat-x top #d2d1d0;
+	font: 13px/19px tahoma, Geneva, sans-serif;
+}
+
+p {
+	padding-bottom: 19px;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+}
+
+blockquote, q {
+	quotes: "" "";
+}
+
+acronym {
+	cursor: help;
+	border-bottom: 1px dashed #333;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+hr {
+	display: none;
+}
+
+html[xmlns] .clearfix {
+	display: block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+/* Link Styles */
+a:link, a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #000;
+	text-decoration: none;
+}
+
+/* post link */
+h1 a:link, h1 a:visited {
+	color: #191919;
+}
+
+h1 a:hover {
+	color: #191919;
+}
+
+h1 a:active {
+	color: #191919;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+	color:#191919;
+	font-family: MgOpen Modata, Arial, Tahoma;
+	line-height: 1em;
+}
+
+h1 {
+	font-size: 40px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	background: url(http://www.progamemap.com/public/images/h1-border.jpg) repeat-x left bottom;
+}
+
+h2 {
+	font-size: 27px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	background: url(http://www.progamemap.com/public/images/h1-border.jpg) repeat-x left bottom;
+}
+
+h3 {
+	font-size: 21px;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+
+h4 {
+	font-size: 15px;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+
+/** Content **/
+.shadowed {
+	border: 1px solid #bbbbbb;
+	-moz-border-radius: 5px;
+}
+
+.shadowed div.inner-boundary {
+	margin: -2px 0px 0px -2px;
+	border: 1px solid #bbbbbb;
+	-moz-border-radius: 5px;
+	background-color: #f4f4f4;
+	background-image: url(http://www.progamemap.com/public/images/white_line.png);
+	background-repeat: repeat-x;
+}
+
+.shadowed div.inner-boundary div.inner-border {
+	border: 1px solid #fefefe;
+	-moz-border-radius: 5px;
+	background-color: #f4f4f4;
+}

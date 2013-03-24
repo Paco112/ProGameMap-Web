@@ -1,0 +1,358 @@
+/** Login Box **/
+  .frame {
+	min-width : 400px;
+}
+
+.frame .frame_top {
+	height : 119px;
+	padding-top : 12px;
+	position : relative;
+}
+
+.frame .frame_top .corners_left, .frame .frame_top .corners_right {
+	position : absolute;
+	width : 156px;
+	height : 119px;
+}
+
+.frame .frame_top .corners_left {
+	background : url(http://www.progamemap.com/public/images/top_left.png) no-repeat;
+	top : 0;
+	left : 0;
+}
+
+.frame .frame_top .corners_right {
+	background : url(http://www.progamemap.com/public/images/top_right.png) no-repeat;
+	top : 0;
+	right : 0;
+}
+
+.frame .frame_top .inner {
+	background : #00b5dd url(http://www.progamemap.com/public/images/top_watermark.png) no-repeat;
+	height : 82px;
+	margin : -15px 30px;
+	position : relative;
+	z-index : 101;
+}
+
+.frame .frame_top .inner h2 {
+	padding-top : 45px;
+	padding-left : 12px;
+	padding-bottom : 5px;
+	font-size : 18px;
+	color : #fff;
+	font-family : Verdana;
+	font-weight : bold;
+	background:none;
+}
+
+.frame .frame_content {
+	background-color : #fff;
+	margin : -37px 22px 0 22px;
+	padding : 20px;
+	padding-bottom : 0;
+	position : relative;
+	z-index : 101;
+	min-height : 79px;
+}
+
+.frame .frame_bottom {
+	height : 119px;
+	position : relative;
+	margin-top : -99px;
+}
+
+.frame .frame_bottom .corners_left, .frame .frame_bottom .corners_right {
+	position : absolute;
+	width : 191px;
+	height : 119px;
+}
+
+.frame .frame_bottom .corners_left {
+	background : url(http://www.progamemap.com/public/images/bottom_left.png) no-repeat;
+	bottom : 0;
+	left : 3px;
+}
+
+.frame .frame_bottom .corners_right {
+	background : url(http://www.progamemap.com/public/images/bottom_right.png) no-repeat;
+	bottom : 0;
+	right : 3px;
+}
+
+.frame .frame_bottom .inner {
+	background-color : #fff;
+	height : 106px;
+	margin : 0 30px;
+}
+
+.popup .frame .frame_top .corners_left {
+	background-image : url(http://www.progamemap.com/public/images/in_popup/top_left.png);
+}
+
+.popup .frame .frame_top .corners_right {
+	background-image : url(http://www.progamemap.com/public/images/in_popup/top_right.png);
+}
+
+.popup .frame .frame_bottom .corners_left {
+	background-image : url(http://www.progamemap.com/public/images/in_popup/bottom_left.png);
+}
+
+.popup .frame .frame_bottom .corners_right {
+	background-image : url(http://www.progamemap.com/public/images/in_popup/bottom_right.png);
+}
+
+.flash_boxes {
+	background-color : #ddebed;
+	border : 1px solid #b6c7d3;
+	margin-bottom:20px;
+}
+
+#flash_boxes{
+	display:none;
+}
+
+.noticeLog, .errorLog {
+	padding : 10px 0 10px 36px;
+	background-repeat : no-repeat;
+	background-position : 10px 11px;
+	line-height : 1.25em;
+	display:block;
+	margin : 0;
+	line-height : 1.25em;
+	color : #333;
+	font-family : Verdana;
+	font-size : 12px;
+}
+
+.noticeLog {
+	background-image : url(http://www.progamemap.com/public/images/notice.png);
+}
+
+.errorLog {
+	background-image : url(http://www.progamemap.com/public/images/error.png);
+}
+
+form.onboard_form input[type="text"], form.onboard_form input[type="password"] {
+	font-size : 18px;
+	color : #333;
+	width : 333px;
+	padding-left : 3px;
+}
+
+form.onboard_form .field {
+	margin-bottom : 15px;
+}
+
+form.onboard_form .field label {
+	color : #999;
+	font-size : 12px;
+}
+
+form.onboard_form .field.text_field label {
+	display : block;
+	margin-bottom : 5px;
+	padding-left : 2px;
+}
+
+form.onboard_form .field.check_box_field {
+	margin-bottom : 5px;
+}
+
+form.onboard_form .actions {
+	text-align : right;
+	margin-top : -10px;
+	margin-bottom : 10px;
+}
+
+.onboard_actions {
+	font-size : 11px;
+	padding-bottom : 10px;
+	margin-right : -3px;
+	margin-left : -3px;
+}
+
+.onboard_actions a {
+	font-size : 12px;
+	color:#000;
+}
+
+.login_page {
+	width : 425px;
+	margin : 50px auto 0;
+}
+
+.signup_page {
+	width : 425px;
+	margin : 50px auto 0;
+}
+
+.signup_page .flash_boxes .info, .signup_page .msg .info {
+	font-size : 12px;
+	border : 0;
+	padding : 0;
+}
+
+.terms_of_service_page {
+	width : 528px;
+	margin : 22px auto 0;
+}
+
+.terms_of_service_page .actions {
+	margin-bottom : 0;
+}
+
+.terms_of_service_page .terms_of_service {
+	margin : 0;
+	margin-bottom : 5px;
+	color : #555;
+	height : 320px;
+	overflow : auto;
+	padding-right : 15px;
+}
+
+.terms_of_service_page .terms_of_service h2 {
+	font-size : 14px;
+	margin-bottom : 5px;
+	font-weight : bold;
+}
+
+.terms_of_service_page .terms_of_service p {
+	line-height : 2em;
+	font-size : 12px;
+}
+
+.terms_of_service_page .actions {
+	padding-top : 5px;
+	padding-bottom : 10px;
+}
+
+.account_setup_page {
+	width : 722px;
+	margin : 80px auto 0;
+}
+
+.success_page {
+	width : 425px;
+	margin : 50px auto 0;
+}
+
+.profile form label {
+	color : #434343;
+	font-size : 12px;
+	font-weight : normal;
+	display : block;
+	clear : both;
+	float : left;
+	text-align : right;
+	vertical-align : baseline;
+	width : 130px;
+	margin-right : 5px;
+	margin-bottom : 5px;
+	padding-top : 4px;
+}
+
+.sign_in_sign_up hr {
+	height : 1px;
+	background-color : #cbcbcb;
+	color : #cbcbcb;
+	border : 0;
+	margin : 20px 0;
+}
+
+.sign_in_sign_up h1 {
+	font-size : 1.5em;
+	margin-bottom : 20px;
+}
+
+.sign_in_sign_up .onboard_actions {
+	margin-left : 0;
+}
+
+.sign_in_sign_up .sign_up .actions {
+	text-align : right;
+	margin : 20px 0;
+}
+
+.gistsubmit {
+	display : block;
+	background : transparent url(http://www.progamemap.com/public/images/gistbtn_normal_left.png) no-repeat 0 0;
+	float : left;
+	font-size : 12px;
+	font-weight : bold;
+	text-align : center;
+	border : 0;
+	height : 39px;
+	color :#FFF;
+	position : relative;
+	margin-right : 5px;
+}
+
+.gistsubmit:hover {
+	text-decoration : none;
+}
+
+.gistsubmit > input {
+	display : block;
+	max-width : 164px;
+	overflow : hidden;
+	font-style : normal;
+	white-space : nowrap;
+	background : none;
+	border : 0;
+	margin : 0 !important;
+	padding : 0;
+	color : #FFF;
+	font-weight : bold;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size : 12px;
+	padding-right : 3px;
+	padding-left : 18px;
+	padding-top : 12px;
+	padding-bottom : 11px;
+	cursor : pointer;
+}
+
+.gistsubmit > a {
+	display : block;
+	max-width : 164px;
+	overflow : hidden;
+	font-style : normal;
+	white-space : nowrap;
+	background : none;
+	border : 0;
+	margin : 0 !important;
+	padding : 0;
+	color : #FFF;
+	font-weight : bold;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size : 12px;
+	padding-right : 3px;
+	padding-left : 18px;
+	padding-top : 10px;
+	padding-bottom : 11px;
+	cursor : pointer;
+	text-decoration:none;
+}
+
+.gistsubmit > span {
+	display : block;
+	position : absolute;
+	top : 0;
+	right : -12px;
+	width : 12px;
+	height : 100%;
+	background : transparent url(http://www.progamemap.com/public/images/gistbtn_normal_right.png) no-repeat 0 0;
+}
+
+.onboard_actions {
+	color : #999;
+	font-size : 11px;
+	padding-bottom : 10px;
+	margin-right : -3px;
+	margin-left : -3px;
+}
+
+.onboard_actions a {
+	font-size : 12px;
+}

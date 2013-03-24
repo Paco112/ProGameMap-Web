@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ProGameMap - {$Titre}</title>
+<script type="text/javascript" src="./public/js/mootools.js"></script>
+<script type="text/javascript" src="./public/js/mysql_debug.js"></script>
+<script type="text/javascript" src="./public/js/global.js"></script>
+<script type="text/javascript" src="./public/js/overlay3.js"></script>
+<script type="text/javascript" src="./public/js/rating.js"></script>
+<link rel="stylesheet" type="text/css" href="./public/css/rating.css">
+<link rel="stylesheet" type="text/css" href="./public/css/mysql_debug.css">
+{$Scripts}
+<style type="text/css">
+<!--
+.calque {
+	opacity:.80;
+	color: #FFFFFF;
+	position: fixed;
+	top: 0px;
+	visibility : hidden;
+	padding: 0px;
+	font-family: Courrier;
+	align: center;
+	font-size: 8pt;
+	background-color: #000000;
+	opacity : .75;
+	filter : alpha(opacity=75);
+	width: 100%;
+	height : 100%;
+top : expression(document.body.scrollTop + this.offsetHeight - this.offsetHeight);
+	position : expression("absolute");
+	width : expression("100%");
+	left : expression("0px");
+	left : 0;
+}
+.image_calque {
+	height: 100%;
+}
+.window {
+	color: #FFFFFF;
+	position: fixed;
+	top: 30px;
+	visibility : hidden;
+	padding: 0px;
+	font-family: Courrier;
+	align: center;
+	font-size: 8pt;
+	background-color: #FFFFFF;
+	width: 100%;
+	height : 100%;
+top : expression(document.body.scrollTop + this.offsetHeight - this.offsetHeight + 30);
+	position : expression("absolute");
+	width : expression("508px");
+left : expression(this.offsetHeight/2-280);
+	left : 0;
+	z-index: 1000;
+}
+.contemp_window {
+	width: 100%;
+	height : 100%;
+	border : 0;
+}
+-->
+</style>
+</head>
+<body leftmargin="0" topmargin="0" bgcolor="#ffffff" marginheight="0" marginwidth="0" {$Body}>
+<div id="overlay" class="calque"></div>
+<div id="window" class="window">
+  <iframe class="contemp_window" id="contempwindow" name="contempwindow" frameborder="no"></iframe>
+</div>
+<!--Body Start-->
+<table width="985" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td valign="top" bgcolor="#e4e4e4">
+            <!--logo-->
+            <table width="985" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr> 
+                    <td width="470"><img src="./public/images/logo2.jpg" alt="" width="470" height="110" border="0"></td>
+                    <td align="right">&nbsp;</td>
+                </tr>
+            </table>
+<!--logo-->
+<!--Menu top-->
+            <table width="985" border="0" align="center" cellpadding="0" cellspacing="0" background="./public/images/videos_12.jpg">
+                <tr> 
+                    <td width="511">
+                        <a href="" title=""><img alt="Vid&eacute;os et DVD" width="144" height="30" border="0"></a>
+                    </td>
+                    <td align="right"><img src="./public/images/videos_14.jpg" width="18" height="30" alt=""></td>
+                    <td width="260"><img src="./public/images/videos_15.jpg" width="260" height="30" alt="Espace membre"></td>
+                </tr>
+            </table>
+<!--Menu Top-->
+<!--Arianne Start-->
+            <table width="725" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                      <td bgcolor="#dddddd">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="5">
+                              <tr> 
+                                <td width="1">&nbsp;</td>
+                                {$FilArianne} 
+                                <td width="90%" nowrap>&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+<!--Arianne End-->
+<!--Menu Start-->
+                <tr> 
+                      <td height="32" align="right" bgcolor="#ebebeb">
+                          <form name="recherche" method="get" action="" style="display:inline">
+                              <table width="100%" border="0" cellspacing="0" cellpadding="3">
+                                <tr> 
+                                    <td width="63"><strong>&nbsp;&nbsp;&nbsp;&nbsp;Affichage:</strong></td>
+                                    <td width="28"><a href="javascript:changer_aff('videos','1','/videos.php');"><img src="./public/images/tube_05.jpg" alt="" width="25" height="24" border="0"></a></td>
+                                    <td width="28"><a href="javascript:changer_aff('videos','2','/videos.php');"><img src="./public/images/tube_03.jpg" alt="" width="25" height="24" border="0"></a></td>
+                                    <td width="193"><a href="javascript:changer_aff('videos','3','/videos.php');"><img src="./public/images/tube_07.jpg" alt="" width="25" height="24" border="0"></a></td>
+                                    <td width="15"><img src="./public/images/videos_29.jpg" width="15" height="15" alt=""></td>
+                                    <td width="67"><strong>Rechercher</strong></td>
+                                    <td width="250"><input name="q" type="text" value="" size="50" class="q"></td>
+                                    <td width="33"><input name="image2" type="image" src="./public/images/videos_31.jpg" width="26" height="19" alt="Rechercher parmis nos vidéos, dvd, studios et actrices"></td>
+                                </tr>
+                              </table>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                      <td height="36" background="./public/images/videos_38.jpg" bgcolor="#d2d2d2">
+                        <table width="725" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td>
+                                    <img src="./public/images/videos_42.jpg" width="6" height="20" alt=""><a href="francaises.htm" title="Vidéos françaises"><img src="./public/images/vid_FR.gif" width="156" height="20" border="0"></a><a href="exclusives.htm" title="Vidéos françaises exclusives"><img src="./public/images/vid_FRexclu.gif" width="173" height="20" border="0"></a><a href="gonzo-us.htm" title="Vid&eacute;os gonzo US"><img src="./public/images/vid_US.gif" width="106" height="20" border="0"></a><a href="porno-realite.htm" title="Porno R&eacute;alit&eacute;"><img src="./public/images/vid_reality.gif" width="137" height="20" border="0"></a><a href="liste_dvd.htm" title="Vid&eacute;os Private"><img src="./public/images/vid_dvd.gif" width="144" height="20" border="0"></a>
+                                </td>
+                              </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+<!--Menu End-->
+<!--Content Start-->
+            <table width="725" border="0" cellspacing="0" cellpadding="8">
+                <tr> 
+                    <td align="center" bgcolor="#e4e4e4"> 
+                        <table border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                                <td align="center">
+                                    <table border="0" cellspacing="0" cellpadding="0" align="center">
+                                        <tr>
+                                            <td align="center">
+                                                <strong>1</strong> / 408
+                                            </td>
+                                            <td valign="bottom">
+                                                <table width="20" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                        <td nowrap>&nbsp; - &nbsp;<a href="videos-2.htm" class="lienvideos">Page suivante</a>&nbsp;&nbsp;</td>
+                                                        <td><img src="./public/images/videos_fleched.gif" width="7" height="7"></td></tr></table></td><td>&nbsp;</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="./public/images/spacer.gif" width="8" height="8"></td>
+                                        </tr>
+                                    </table>
+                                    <div style="padding-top:20px;">
+                                    {$Content}
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+<!-- MENU DROITE START -->
+                    <td width="260" valign="top" bgcolor="#b9b9b9"> 
+                          <table width="260" border="0" cellspacing="0" cellpadding="0">
+                            <tr> 
+                                  <td height="22" align="center" background="./public/images/videos_18.jpg"><strong>Vous &ecirc;tes membre - Connectez vous !</strong></td>
+                            </tr>
+                            <tr> 
+                                  <td height="96" background="./public/images/videos_27.jpg">
+                                    <form action="" method="post" name="login" id="login" style="display:inline">
+                                          <table width="233" border="0" align="center" cellpadding="3" cellspacing="0">
+                                            <tr> 
+                                                <td width="78" align="left" class="grisc">Mail:</td>
+                                                <td width="92"><input name="mail" type="text" class="champ" id="mail" size="23"></td>
+                                                <td width="45"><img src="./public/images/videos_36.jpg" width="11" height="17" alt=""></td>
+                                            </tr>
+                                            <tr> 
+                                                <td align="left" nowrap class="grisc">Password:</td>
+                                                <td><input name="password" type="password" class="champ" id="password" size="23"></td>
+                                                <td><img src="./public/images/videos_36.jpg" width="11" height="17" alt=""></td>
+                                            </tr>
+                                            <tr> 
+                                                <td colspan="2">
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td width="92%"><a href="#_" class="lienmenu" OnClick="affiche_overlay_window('','508','423');">Devenir membre gratuitement</a></td>
+                                                            <td width="8%"><input name="image2" type="image" src="./public/images/videos_50.jpg" width="26" height="19" alt="Se connecter"></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td>&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr> 
+                                <td height="44" background="./public/images/videos_55.jpg">
+                                    <table width="240" border="0" align="center" cellpadding="0" cellspacing="0">
+                                        <tr> 
+                                            <td width="14"><img src="./public/images/videos_63.jpg" width="10" height="10" alt=""></td>
+                                            <td width="102"><a href="#_" class="lienmenu" OnClick="affiche_overlay_window('','508','423');">Devenir membre</a></td>
+                                            <td width="13"><img src="./public/images/videos_63.jpg" width="10" height="10" alt=""></td>
+                                            <td width="103"><a href="" class="lienmenu">Password perdu</a></td>
+                                        </tr>
+
+                                        <tr> 
+                                            <td><img src="./public/images/videos_63.jpg" width="10" height="10" alt=""></td>
+                                            <td nowrap><a href="" class="lienmenu">Se connecter</a></td>
+                                            <td><img src="./public/images/videos_63.jpg" width="10" height="10" alt=""></td>
+                                            <td><a href="" class="lienmenu">Nous contacter</a></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                          </table>
+                          <table width="260" border="0" cellspacing="0" cellpadding="0">
+                            <tr> 
+                                <td height="44" background="./public/images/videos_68.jpg">
+                                    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="260" height="45">
+                                        <param name="movie" value="public/images/bloc_menud_video.swf">
+                                        <param name="quality" value="high">
+                                        <embed src="./public/images/bloc_menud_video.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="260" height="45"></embed>
+                                    </object>
+                                </td>
+                            </tr>
+                            <tr> 
+                                 <td><img src="./public/images/videos_69.jpg" width="260" height="31" alt=""></td>
+                            </tr>
+                            <tr> 
+                                <td bgcolor="#96020f">
+                                    <br>
+                                    <table width="239" border="0" align="center" cellpadding="0" cellspacing="0">
+                                        <tr> 
+                                            <td>
+                                                <table width="239" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr> 
+                                                        <td width="18"><img src="./public/images/videos_72.jpg" width="13" height="13" alt=""></td>
+                                                        <td width="221" class="menutitre">Les vid&eacute;os par pays:</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr> 
+                                            <td><img src="./public/images/videos_76.jpg" width="239" height="9" alt=""></td>
+                                        </tr>
+                                        <tr> 
+                                            <td bgcolor="#540005">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="2">
+                                                    <tr> 
+                                                        <td>
+                                                            <table width="224" border="0" align="center" cellpadding="3" cellspacing="0">
+                                                                <tr> 
+                                                                    <td width="14"><img src="./public/images/video_80.jpg" width="18" height="12" alt=""></td>
+                                                                    <td width="102"><a href="#">COD 4</a></td>
+                                                                    <td width="13"><img src="./public/images/video_82.jpg" width="18" height="12" alt=""></td>
+                                                                    <td width="103"><a href="#">COD 5</a></td>
+                                                                </tr>
+                                                                <tr> 
+                                                                    <td><img src="./public/images/video_86.jpg" width="18" height="12" alt=""></td>
+                                                                    <td nowrap><a href="#">MOHAA</a></td>
+                                                                    <td><img src="./public/images/spacer.gif" width="18" height="12" alt=""></td>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr> 
+                                            <td><img src="./public/images/videos_90.jpg" width="239" height="10" alt=""></td>
+                                        </tr>
+                                    </table>
+                                    <table width="239" border="0" align="center" cellpadding="0" cellspacing="0">
+                                        <tr> 
+                                            <td>
+                                                <table width="239" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr> 
+                                                        <td width="18"><img src="./public/images/videos_72.jpg" width="13" height="13" alt=""></td>
+                                                        <td width="221" class="menutitre">Les vid&eacute;os par cat&eacute;gories:</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr> 
+                                            <td><img src="./public/images/videos_76.jpg" width="239" height="9" alt=""></td>
+                                        </tr>
+                                        <tr> 
+                                            <td bgcolor="#540005">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="10">
+                                                    <tr valign="top">
+                                                        <td width="55%"><a href="#">COD 5</a><br><a href="#">COD 4</a><br></td>
+                                                        <td width="45%"><a href="#">MOHAA</a><br></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr> 
+                                            <td><img src="./public/images/videos_90.jpg" width="239" height="10" alt=""></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                          </table>
+                        <table width="260" border="0" cellpadding="0" cellspacing="0" bgcolor="#b9b9b9">
+                            <tr>
+                                <td align="center"><img src="./public/images/videos_102.gif" width="260" height="55" alt=""></td>
+                            </tr>
+                            <tr> 
+                                  <td align="center">
+                                    <br> 
+                                    <table width="221" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#b9b9b9">
+                                        <tr> 
+                                              <td bgcolor="#FFFFFF">
+                                                <table width="211" border="0" align="center" cellpadding="5" cellspacing="0">
+                                                    <tr>
+                                                        <td><img src="./public/images/white.gif" width="211" height="159" border="0"></td>
+                                                      </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                              <td height="43" background="./public/images/videos_134.gif">
+                                                <table width="214" border="0" align="center" cellpadding="5" cellspacing="0">
+                                                    <tr>
+                                                        <td width="18" valign="top"><img src="./public/images/spacer.gif" width="1" height="2" alt=""><img src="./public/images/video_80.jpg" width="18" height="12" border="0"></td>
+                                                        <td width="192" class="petit">&nbsp;</td>
+                                                      </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                      </table>
+                                      <br><br><br>
+                                </td>
+                            </tr>
+                            <tr> 
+                                <td align="center">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+<!-- MENU DROITE END -->
+                </tr>
+            </table>
+<!--Body End-->
+<!-- FOOTER DEBUT -->            
+            <table width="985" border="0" align="center" cellpadding="0" cellspacing="0" background="./public/images/footer_15.jpg">
+                  <tr> 
+                    <td width="139"><img src="./public/images/footer_14.jpg" width="203" height="90"></td>
+                    <td width="846" class="petit">
+                        <strong><a href="" class="lienvideos">Index</a></strong> - <strong><a href="" class="lienvideos">Entrée des membres</a></strong> - <strong><a href="#_" class="lienvideos" OnClick="affiche_overlay_window('pop_join.php?i=aucune&t=videos','508','423');">Inscription</a></strong> - <strong><a href="" class="lienvideos">Contact</a></strong><br><br><span class="gris">Tous les mod&egrave;les pr&eacute;sents sur ce site sont majeurs au moment du tournage.<br>Toute reproduction, totale ou partielle, est strictement interdite. Protection de l'accès assurée par l'Icra.<br>Copyright 2008 - Déclaration CNIL 1333390 - </span><strong><a href="" class="lienvideos"></a></strong> - <a href="" target="_blank" class="lienvideos">Affiliation</a> - <a href="" target="_blank" class="lienvideos">Outils pour webmasters</a>
+                    </td>
+                </tr>
+            </table>
+<!-- FOOTER END -->
+</body>
+</html> 

@@ -1,0 +1,305 @@
+/* -------------------------------- */
+/* Personal Profile
+/* -------------------------------- */
+
+.pp-name2 {
+	background: #F8F8F8;
+	border: 1px solid #DDDDDD;
+	margin: 0px;
+	padding: 10px;
+}
+
+.pp-name2 h3 {
+	margin:0px;
+	padding:0px 0px 5px 0px;
+	font-size:24px;
+}
+
+.pp-header2 {
+	background: #FFF url(http://www.progamemap.com/public/images/rg.png) repeat-x;
+	color: #666666;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0px 0px 1px 0px;
+	padding: 5px;
+	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+}
+
+.pp-title2 {
+	background: #FFF;
+	border-bottom: 0px solid #FFE600;
+	color: #6CB212;
+	font-family:'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+	font-size:1.6em;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 0px;
+	padding: 8px;
+}
+
+.pp-datebox2 {
+	text-align: center;
+	background: #FFFFFF;
+	border: 1px solid #DDDDDD;
+	color: #777777;
+	padding: 4px;
+	margin: 0px;
+	font-size:18px;
+	font-weight:bold;
+	line-height: 100%;
+	letter-spacing: -1px;
+	float:right;
+	width: auto;
+}
+
+.pp-datebox2 em {
+	color: #AAA;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.pp-contentbox-back2 {
+	background-image: url(http://www.progamemap.com/public/images/pp-css-contentblock.gif);
+	background-repeat: repeat-x;
+	background-color: #F4F4F4;
+	padding: 6px;
+}
+
+.pp-contentbox-entry2, .pp-contentbox-entry-noheight2, .pp-contentbox-entry-noheight-mod2, .pp-contentbox-entry-noheight-sel2 {
+	background-color: #FFF;
+	border: 1px solid #DDDDDD;
+	color: #2A4E6F;
+	line-height: 140%;
+	padding: 8px;
+	margin-bottom: 6px;
+	height: 200px;
+	overflow: auto;
+	overflow-x: auto;
+}
+
+.pp-contentbox-entry-noheight-sel2 {
+	background-color:#FFF;
+}
+
+.pp-contentbox-entry-noheight-mod2 {
+	background-color:#F4F4F4;
+}
+
+.pp-contentbox-entry-noheight2, .pp-contentbox-entry-noheight-mod2, .pp-contentbox-entry-noheight-sel2 {
+	height: auto;
+	margin-bottom: 1px;
+}
+
+.pp-image-thumb-wrap2, .pp-image-thumb-wrap-floatright2, .pp-image-mini-wrap2, .pp-image-mini-wrap-floatright2 {
+	width: 52px;
+	height: 52px;
+	text-align: center;
+	background: #FFFFFF;
+	border: 1px solid #555555;
+	padding: 4px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.pp-image-mini-wrap2, .pp-image-mini-wrap-floatright2 {
+	width: 27px;
+	height: 27px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.pp-image-thumb-wrap-floatright2, .pp-image-mini-wrap-floatright2 {
+	float:right;
+}
+
+.pp-tiny-text2 {
+	color: gray;
+	font-size: 12px;
+}
+
+.pp-mini-content-entry2, .pp-mini-content-entry-noheight2, .pp-mini-entry-noheight-shaded2 {
+	background-color: #F8F8F8;
+	padding: 6px;
+	border-bottom: 1px dotted #DDDDDD;
+	clear:both;
+	width: auto;
+	height: 60px;
+}
+
+.pp-mini-entry-noheight-shaded2 {
+	background-color: #E3DFE7;
+}
+
+.pp-mini-content-entry-noheight2, .pp-mini-entry-noheight-shaded2 {
+	height: auto;
+}
+
+.pp-tabclear2, .pp-maintitle2 {
+	background: url(http://www.progamemap.com/public/images/row.png) repeat-x;
+	border: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	color: #666666;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0px;
+	padding: 8px;
+}
+
+.pp-tabclear2 {
+	border-right: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+}
+
+.pp-tabon2 {
+	border-top:1px solid #DDDDDD;
+	border-left:1px solid #CCCCCC;
+	border-right:1px solid #DDDDDD;
+	background-color:#6696D6;
+	color:#777777;
+	padding:5px 8px 5px 8px;
+	float:left;
+	width:auto;
+	background-image: url(http://www.progamemap.com/public/images/tab_on.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	margin-top:3px;
+	font-size:12px;
+}
+
+.pp-taboff2, .pp-tabshaded2 {
+	border-top: 1px solid #DDDDDD;
+	border-left: 0px solid #DDDDDD;
+	border-right: 1px solid #DDDDDD;
+	background-color: #3363A1;
+	color: #FFF;
+	padding:5px 8px 5px 8px;
+	float: left;
+	width: auto;
+	background-image: url(http://www.progamemap.com/public/images/tab_off.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	margin-top:3px;
+	font-size:12px;
+}
+
+.pp-tabshaded2 {
+	background-image: url(http://www.progamemap.com/public/images/tab_off.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	color: #FFF;
+	border-top: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+	border-right: 1px solid #DDDDDD;
+}
+
+.pp-tabon2 a:link, .pp-tabon2 a:visited, .pp-tabon2 a:active {
+	text-decoration:none;
+	color: #777777;
+}
+
+.pp-taboff2 a:link, .pp-taboff2 a:visited, .pp-taboff2 a:active, .pp-tabshaded2 a:link, .pp-tabshaded2 a:visited, .pp-tabshaded2 a:active {
+	text-decoration:none;
+	color: #F4F4F4;
+}
+
+.pp-tabwrap2 {
+	height: 33px;
+	margin:0px;
+	padding:0px;
+}
+
+/* Storylist Share Email Box */
+#share-dialog {
+	display:none;
+}
+
+.share-email a.email-suggestion {
+	background:#edf7e6 url(/img/lightbox-email-apps.png) 460px 7px no-repeat;
+	display:block;
+	margin:-16px -17px 15px;
+	padding:15px 15px 15px 65px;
+	font-size:1.15em;
+	font-weight:bold;
+	text-decoration:none;
+	color:#64a715;
+	border-bottom:1px solid #daecb0;
+}
+
+.share-email a.email-suggestion:hover {
+	color:#000033;
+}
+
+.share-email label {
+	float:left !important;
+	display:block;
+	position:absolute;
+	color:#777;
+}
+
+.share-email input[type="text"] {
+	padding:5px;
+	-moz-border-radius:3px !important;
+	-webkit-border-radius:3px !important;
+	color:#777;
+	margin:0 0 10px 0;
+	width:490px;
+	margin-left:50px;
+	border:1px solid #ccc;
+	font-size:1.1em;
+}
+
+.share-email textarea {
+	width:530px;
+	padding:10px;
+	height:12em;
+	margin:10px 0 5px 0;
+	font-size:100%;
+	background:#fffdea;
+	border:1px solid #dcd069;
+	color:#39340b;
+}
+
+.share-test-email .dialog-tray {
+	text-align:left;
+}
+
+/** Pagination **/
+ul.pagination {
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	display:inline;
+	list-style-type: none;
+	list-style-image: none;
+	list-style:none;
+}
+
+ul.pagination li{
+	float:left;
+}
+
+ul.pagination li a.numPage {
+	font-size: 15px;
+	padding:2px 8px 2px 8px;
+	line-height:32px; /*hauteur de l'image de fond*/
+	background:#d6e2b9;
+	color:#687f2f;
+	text-decoration:none;
+	text-align:center;
+	margin-left:5px;
+}
+
+ul.pagination li a.numPage:hover {
+	background:#839f40;
+	color:#ffe88c;
+}
+
+ul.pagination li a.hover {
+	background:#839f40;
+	color:#ffe88c;
+}
+
+ul.pagination li.navPage {
+	margin:5px 0 0 5px;
+}

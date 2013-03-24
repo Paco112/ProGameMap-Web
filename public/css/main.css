@@ -1,0 +1,2050 @@
+
+body {
+	FONT-SIZE: 12px;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+.borderwrap, .borderwrapm {
+	background : #fff;
+	border : 1px solid #ddd;
+	padding : 0;
+	margin : 0;
+}
+
+.borderwrapm {
+	margin : 5px;
+}
+
+.borderwrap h3, .maintitle, .maintitlecollapse {
+	background : url(web2englis/tile_cat.gif) no-repeat left;
+	border : 0 solid #fff;
+	border-bottom : 0 solid #1474a7;
+	color : #0d5a90;
+	font-size : 15px;
+	font-weight : bold;
+	margin : 0;
+	padding : 8px 8px 8px 12px;
+}
+
+/* -------------------------------- */
+/* Personal Profile
+/* -------------------------------- */
+
+.pp-name2 {
+	background: #F8F8F8;
+	border: 1px solid #DDDDDD;
+	margin: 0px;
+	padding: 10px;
+}
+
+.pp-name2 h3 {
+	margin:0px;
+	padding:0px 0px 5px 0px;
+	font-size:24px;
+}
+
+.pp-header2 {
+	background: #FFF url(http://www.progamemap.com/public/images/rg.png) repeat-x;
+	color: #666666;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0px 0px 1px 0px;
+	padding: 5px;
+	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+}
+
+.pp-title2 {
+	background: #FFF;
+	border-bottom: 0px solid #FFE600;
+	color: #6CB212;
+	font-family:'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+	font-size:1.6em;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 0px;
+	padding: 8px;
+}
+
+.pp-datebox2 {
+	text-align: center;
+	background: #FFFFFF;
+	border: 1px solid #DDDDDD;
+	color: #777777;
+	padding: 4px;
+	margin: 0px;
+	font-size:18px;
+	font-weight:bold;
+	line-height: 100%;
+	letter-spacing: -1px;
+	float:right;
+	width: auto;
+}
+
+.pp-datebox2 em {
+	color: #AAA;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.pp-contentbox-back2 {
+	background-image: url(http://www.progamemap.com/public/images/pp-css-contentblock.gif);
+	background-repeat: repeat-x;
+	background-color: #F4F4F4;
+	padding: 6px;
+}
+
+.pp-contentbox-entry2, .pp-contentbox-entry-noheight2, .pp-contentbox-entry-noheight-mod2, .pp-contentbox-entry-noheight-sel2 {
+	background-color: #FFF;
+	border: 1px solid #DDDDDD;
+	color: #2A4E6F;
+	line-height: 140%;
+	padding: 8px;
+	margin-bottom: 6px;
+	height: 200px;
+	overflow: auto;
+	overflow-x: auto;
+}
+
+.pp-contentbox-entry-noheight-sel2 {
+	background-color:#FFF;
+}
+
+.pp-contentbox-entry-noheight-mod2 {
+	background-color:#F4F4F4;
+}
+
+.pp-contentbox-entry-noheight2, .pp-contentbox-entry-noheight-mod2, .pp-contentbox-entry-noheight-sel2 {
+	height: auto;
+	margin-bottom: 1px;
+}
+
+.pp-image-thumb-wrap2, .pp-image-thumb-wrap-floatright2, .pp-image-mini-wrap2, .pp-image-mini-wrap-floatright2 {
+	width: 52px;
+	height: 52px;
+	text-align: center;
+	background: #FFFFFF;
+	border: 1px solid #555555;
+	padding: 4px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.pp-image-mini-wrap2, .pp-image-mini-wrap-floatright2 {
+	width: 27px;
+	height: 27px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.pp-image-thumb-wrap-floatright2, .pp-image-mini-wrap-floatright2 {
+	float:right;
+}
+
+.pp-tiny-text2 {
+	color: gray;
+	font-size: 12px;
+}
+
+.pp-mini-content-entry2, .pp-mini-content-entry-noheight2, .pp-mini-entry-noheight-shaded2 {
+	background-color: #F8F8F8;
+	padding: 6px;
+	border-bottom: 1px dotted #DDDDDD;
+	clear:both;
+	width: auto;
+	height: 60px;
+}
+
+.pp-mini-entry-noheight-shaded2 {
+	background-color: #E3DFE7;
+}
+
+.pp-mini-content-entry-noheight2, .pp-mini-entry-noheight-shaded2 {
+	height: auto;
+}
+
+.pp-tabclear2, .pp-maintitle2 {
+	background: url(http://www.progamemap.com/public/images/row.png) repeat-x;
+	border: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	color: #666666;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0px;
+	padding: 8px;
+}
+
+.pp-tabclear2 {
+	border-right: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+}
+
+.pp-tabon2 {
+	border-top:1px solid #DDDDDD;
+	border-left:1px solid #CCCCCC;
+	border-right:1px solid #DDDDDD;
+	background-color:#6696D6;
+	color:#777777;
+	padding:8px;
+	float:left;
+	width:auto;
+	background-image: url(http://www.progamemap.com/public/images/tab_on.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	margin-top:3px;
+	font-size:12px;
+}
+
+.pp-taboff2, .pp-tabshaded2 {
+	border-top: 1px solid #DDDDDD;
+	border-left: 0px solid #DDDDDD;
+	border-right: 1px solid #DDDDDD;
+	background-color: #3363A1;
+	color: #FFF;
+	padding:8px;
+	float: left;
+	width: auto;
+	background-image: url(http://www.progamemap.com/public/images/tab_off.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	margin-top:3px;
+	font-size:12px;
+}
+
+.pp-tabshaded2 {
+	background-image: url(http://www.progamemap.com/public/images/tab_off.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	color: #FFF;
+	border-top: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+	border-right: 1px solid #DDDDDD;
+}
+
+.pp-tabon2 a:link, .pp-tabon2 a:visited, .pp-tabon2 a:active {
+	text-decoration:none;
+	color: #777777;
+}
+
+.pp-taboff2 a:link, .pp-taboff2 a:visited, .pp-taboff2 a:active, .pp-tabshaded2 a:link, .pp-tabshaded2 a:visited, .pp-tabshaded2 a:active {
+	text-decoration:none;
+	color: #F4F4F4;
+}
+
+.pp-tabwrap2 {
+	height: 34px;
+	margin:0px;
+	padding:0px;
+}
+
+/* -------------------------------- */
+/* Experimental                     */
+/* -------------------------------- */
+
+.popupmenu, .popupmenu-new {
+	background: #F8F8F8;
+	border: 1px solid #DDDDDD;
+	text-align:left;
+	font-size: 11px;
+	white-space:nowrap;/*padding:3px 5px 3px 3px;*//*width:300px;*/
+}
+
+.popupmenu-item {
+	padding: 5px;
+	font-family:'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+	/*margin-top:4px;*/
+	white-space: nowrap;
+	border-bottom: 1px solid #DDDDDD;
+	color:  #777777;
+}
+
+.popupmenu-item-last {
+	padding: 5px;
+	/*margin-top:4px;*/
+	white-space: nowrap;
+	color:  #777777;
+	font-weight: normal;
+}
+
+.popmenubutton-new, .popmenubutton {
+	width:120px;
+	white-space:nowrap;
+	background: #FFF url(http://www.progamemap.com/public/images/button.png) repeat-x;
+	border: 1px solid #DDDDDD;
+	color: #3A6AA6;
+	font-weight:bold;
+	float:right;
+	height:18px;
+	text-align:center;
+	margin:0px;
+	font-size:11px;
+	padding:3px;
+}
+
+.popmenubutton-new {
+	float:none;
+	width:auto;
+	text-align:left;
+	height:auto;
+	padding:3px;
+	font-weight:normal;
+	background-color: #FFFFFF;
+	background-image: url(http://www.progamemap.com/public/images/menu_action_down-padded.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.popmenubutton-new-out {
+	padding:4px;
+}
+
+.popupmenu-new {
+	background-color: #F8F8F8;
+}
+
+.popmenubutton a:link, .popmenubutton a:visited, .popmenubutton-new a:link, .popmenubutton-new a:visited, .popmenubutton a:active, .popmenubutton a:hover, .popmenubutton-new a:active, .popmenubutton-new a:hover {
+	color: #3A6AA6;
+	text-decoration: none;
+}
+
+.popupmenu-item a:link, .popupmenu-item a:visited, .popupmenu-item-last a:link, .popupmenu-item-last a:visited {
+	color: #3A6AA6;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.popupmenu-item a:hover, .popupmenu-item-last a:hover {
+	color: #3A6AA6;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.popupmenu-category {
+	background: transparent url(http://www.progamemap.com/public/images/rg.png) repeat-x;
+	border-top: 1px solid #FFF;
+	border-bottom: 1px solid #DDDDDD;
+	color: #777777;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin: 0;
+	padding: 5px;
+}
+
+.pp-name {
+	background : #f5f5f5;
+	border-top : 1px solid #d2ebf9;
+	border-bottom : 1px solid #d2ebf9;
+	margin : 0;
+	padding : 10px;
+}
+
+.pp-name h3 {
+	margin : 0;
+	padding : 0 0 5px 0;
+	font-size : 24px;
+}
+
+.pp-header {
+	background : transparent url(web2englis/tile_sub.gif);
+	color : #0e4f72;
+	font-size : 10px;
+	font-weight : bold;
+	margin : 0 0 1px 0;
+	padding : 5px;
+}
+
+.pp-title {
+	background : url(web2englis/css_pp_header.gif);
+	border-bottom : 0 solid #1474a7;
+	color : #fff;
+	font-size : 12px;
+	font-weight : bold;
+	margin : 0;
+	padding : 8px;
+}
+
+.pp-datebox {
+	text-align : center;
+	background : #ffffff;
+	border : 1px solid #555555;
+	padding : 4px;
+	margin : 0;
+	font-size : 18px;
+	font-weight : bold;
+	line-height : 100%;
+	letter-spacing : -1px;
+	float : right;
+	width : auto;
+}
+
+.pp-datebox em {
+	color : #aaa;
+	font-weight : normal;
+	font-style : normal;
+}
+
+.pp-contentbox-back {
+	background-image : url(web2englis/folder_profile_portal/pp-css-contentblock.gif);
+	background-repeat : repeat-x;
+	background-color : #efefef;
+	padding : 6px;
+}
+
+.pp-contentbox-entry, .pp-contentbox-entry-noheight, .pp-contentbox-entry-noheight-mod, .pp-contentbox-entry-noheight-sel {
+	background-color : #f2f2f2;
+	border : 1px solid #888888;
+	line-height : 140%;
+	padding : 8px;
+	margin-bottom : 6px;
+	height : 200px;
+	overflow : auto;
+}
+
+.pp-contentbox-entry-noheight-sel {
+	background-color : #fceccd;
+}
+
+.pp-contentbox-entry-noheight-mod {
+	background-color : #fdf1da;
+}
+
+.pp-contentbox-entry-noheight, .pp-contentbox-entry-noheight-mod, .pp-contentbox-entry-noheight-sel {
+	height : auto;
+	margin-bottom : 1px;
+}
+
+.pp-image-thumb-wrap, .pp-image-thumb-wrap-floatright, .pp-image-mini-wrap, .pp-image-mini-wrap-floatright {
+	width : 52px;
+	height : 52px;
+	text-align : center;
+	background : #ffffff;
+	border : 1px solid #555555;
+	padding : 4px;
+	margin-top : auto;
+	margin-bottom : auto;
+}
+
+.pp-image-mini-wrap, .pp-image-mini-wrap-floatright {
+	width : 27px;
+	height : 27px;
+	margin-top : auto;
+	margin-bottom : auto;
+}
+
+.pp-image-thumb-wrap-floatright, .pp-image-mini-wrap-floatright {
+	float : right;
+}
+
+.pp-tiny-text {
+	color : gray;
+	font-size : 10px;
+}
+
+.pp-mini-content-entry, .pp-mini-content-entry-noheight, .pp-mini-entry-noheight-shaded {
+	background-color : #f8f8f8;
+	padding : 6px;
+	border-bottom : 1px dotted #555555;
+	clear : both;
+	width : auto;
+	height : 60px;
+}
+
+.pp-mini-entry-noheight-shaded {
+	background-color : #e3dfe7;
+}
+
+.pp-mini-content-entry-noheight, .pp-mini-entry-noheight-shaded {
+	height : auto;
+}
+
+.pp-tabclear, .pp-maintitle {
+	background : url(web2englis/css_pp_header.gif);
+	border : 0 solid #fff;
+	border-bottom : 0 solid #1474a7;
+	color : #fff;
+	font-size : 12px;
+	font-weight : bold;
+	margin : 0;
+	padding : 8px;
+}
+
+.pp-tabclear {
+	border : 0;
+	border-right : 1px solid #7c7c7c;
+	border-left : 1px solid #7c7c7c;
+}
+
+.pp-tabon {
+	border-top : 1px solid #7c7c7c;
+	border-left : 1px solid #7c7c7c;
+	border-right : 1px solid #7c7c7c;
+	background-color : #6696d6;
+	color : #ffffff;
+	padding : 8px;
+	float : left;
+	width : auto;
+	background-image : url(web2englis/css_pp_tab_on.gif);
+	background-repeat : repeat-x;
+	background-position : left bottom;
+	margin-top : 3px;
+	font-size : 10px;
+}
+
+.pp-taboff, .pp-tabshaded {
+	border-top : 1px solid #4ab3d7;
+	border-left : 1px solid #4ab3d7;
+	border-right : 1px solid #4ab3d7;
+	background-color : #3363a1;
+	color : #3363a1;
+	padding : 8px;
+	float : left;
+	width : auto;
+	background-image : url(web2englis/css_pp_tab_off.gif);
+	background-repeat : repeat-x;
+	background-position : left bottom;
+	margin-top : 3px;
+	font-size : 10px;
+}
+
+.pp-tabshaded {
+	background-image : url(web2englis/css_pp_tab_shaded.gif);
+	background-repeat : repeat-x;
+	background-position : left bottom;
+	color : #516795;
+	border-top : 1px solid #7f9bbc;
+	border-left : 1px solid #7f9bbc;
+	border-right : 1px solid #7f9bbc;
+}
+
+.pp-tabon a:link, .pp-tabon a:visited, .pp-tabon a:active {
+	text-decoration : none;
+	color : #ffffff;
+}
+
+.pp-taboff a:link, .pp-taboff a:visited, .pp-taboff a:active, .pp-tabshaded a:link, .pp-tabshaded a:visited, .pp-tabshaded a:active {
+	text-decoration : none;
+	color : #3363a1;
+}
+
+.pp-tabwrap {
+	height : 34px;
+	margin : 0;
+	padding : 0;
+}
+
+.tableheader, .tableheaderalt, .tableheader2 {
+	font-size : 12px;
+	vertical-align : middle;
+	font-weight : bold;
+	color : #fff;
+	padding : 8px 0 8px 5px;
+	background-image : url(http://www.progamemap.com/public/images/table_title_gradient.gif);
+	background-repeat : repeat-x;
+	background-color : #3363a1;
+}
+
+.tableborder {
+	border : 1px solid #5d789c;
+}
+
+.tablefooter, .tablesubheader {
+	background-color : #acbfd9;
+	font-size : 10px;
+	color : #3363a1;
+	font-weight : bold;
+	padding : 5px;
+}
+
+.tablerow1 img, .tablerow2 img, .tablerow3 img {
+	vertical-align : middle;
+	border : 0;
+}
+
+.tablerow1 {
+	background-color : #eaedf0;
+	padding : 6px;
+	border-bottom : 1px solid #c1bebe;
+	border-right : 1px solid #c1bebe;
+	border-top : 1px solid #fff;
+	border-left : 1px solid #fff;
+}
+
+.tablerow2 {
+	background-color : #f1f1f1;
+	padding : 6px;
+	border-bottom : 1px solid #c1bebe;
+	border-right : 1px solid #c1bebe;
+	border-top : 1px solid #fff;
+	border-left : 1px solid #fff;
+}
+
+.tablerow3 {
+	background-color : #d1dceb;
+	padding : 6px;
+	border-bottom : 1px solid #d1dceb;
+	border-right : 1px solid #d1dceb;
+	border-top : 1px solid #fff;
+	border-left : 1px solid #fff;
+}
+
+.tablerow4 {
+	background-color : #c0cbda;
+	padding : 6px;
+	border-bottom : 1px solid #d1dceb;
+	border-right : 1px solid #d1dceb;
+	border-top : 1px solid #fff;
+	border-left : 1px solid #fff;
+}
+
+.realbutton {
+	border : 1px solid #999;
+	background-color : #e7e7e7;
+	font-family : Verdana, Arial;
+	font-size : 10px;
+	font-weight : bold;
+	padding : 2px;
+	cursor : pointer;
+}
+
+.popupmenu {
+	background-color : #eff3f7;
+	border : 1px solid #999;
+	text-align : left;
+	font-size : 10px;
+	padding : 3px 5px 3px 3px;
+	background-image : url(http://www.progamemap.com/public/images/menu-icon-bg.gif);
+	background-repeat : repeat-y;
+}
+
+.menusep {
+	white-space : nowrap;
+	padding-top : 4px;
+	padding-bottom : 3px;
+	border-bottom : 1px solid #ddd;
+}
+
+.menusep a:link, .menusep a:visited, .menusep a:active, .menuseplast a:link, .menuseplast a:visited, .menuseplast a:active {
+	text-decoration : none;
+	font-weight : bold;
+	color : #000000;
+}
+
+.menuseplast {
+	white-space : nowrap;
+	padding-top : 4px;
+	padding-bottom : 3px;
+	color : #000;
+}
+
+img.ipd {
+	vertical-align : middle;
+	border : 0;
+	padding : 0;
+	margin : 0;
+	float : none;
+}
+
+.editable:hover {
+	background:#eee;
+}
+
+.textarea textarea {
+	height:200px;
+	padding:3px;
+}
+
+.editable-empty {
+	background:#fffea1;
+	padding:20px;
+	border:1px dashed #fc0;
+}
+
+.box {
+	border:1px solid #ccc;
+	padding:5px;
+	display:block;
+	width:95%;
+}
+
+.admin_section ul {
+	list-style : none;
+	margin : 0;
+	padding : 0;
+}
+
+h3 {
+	font-size : 120%;
+	font-weight : bolder;
+}
+
+.admin_section ul li {
+	display : inline;
+}
+
+.admin_section ul li a {
+	text-align : center;
+	float : left;
+	display : block;
+	font-size : 11px;
+	color : #333;
+	margin : 1px 5px;
+	width : 70px;
+	padding : 5px 5px;
+}
+
+.admin_section ul li a {
+	text-decoration : none !important;
+}
+
+.admin_section ul li a span {
+	display : block;
+}
+
+.admin_section ul li a:hover span {
+	text-decoration : underline !important;
+}
+
+/* Storylist Share */
+.share-storylist {
+	position:relative;
+	float:left;
+}
+
+.share-hover {
+	background:url(storylist-share.png) no-repeat;
+	width:138px;
+	height:106px;
+	position:absolute;
+	top:19px;
+	left:-35px !important;
+	z-index:100;
+	display:none;
+}
+
+.share-diggbar-url {
+	position:absolute;
+	top:24px;
+	left:14px;
+	padding:5px;
+	text-decoration:none;
+	background:#fff;
+	width:98px;
+	border:1px solid #c6c6c6;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+
+.share-hover span {
+	font-size:85%;
+	font-weight:normal;
+	color:#9ab9d5;
+	display:block;
+	margin-top:-1px;
+}
+
+ul.share actions, ul.share-actions li {
+	list-style:none;
+}
+
+ul.share-actions li a {
+	text-indent:-999px;
+	width:40px;
+	height:26px;
+	position:absolute;
+	top:63px;
+}
+
+.share-actions li.facebook a {
+	left:48px;
+	width:42px;
+}
+
+.share-actions li.email a {
+	left:7px;
+}
+
+.share-actions li.twitter a {
+	left:91px;
+}
+
+/* Storylist Share Email Box */
+#share-dialog {
+	display:none;
+}
+
+.share-email a.email-suggestion {
+	background:#edf7e6 url(/img/lightbox-email-apps.png) 460px 7px no-repeat;
+	display:block;
+	margin:-16px -17px 15px;
+	padding:15px 15px 15px 65px;
+	font-size:1.15em;
+	font-weight:bold;
+	text-decoration:none;
+	color:#64a715;
+	border-bottom:1px solid #daecb0;
+}
+
+.share-email a.email-suggestion:hover {
+	color:#000033;
+}
+
+.share-email label {
+	float:left !important;
+	display:block;
+	position:absolute;
+	color:#777;
+}
+
+.share-email input[type="text"] {
+	padding:5px;
+	-moz-border-radius:3px !important;
+	-webkit-border-radius:3px !important;
+	color:#777;
+	margin:0 0 10px 0;
+	width:490px;
+	margin-left:50px;
+	border:1px solid #ccc;
+	font-size:1.1em;
+}
+
+.share-email textarea {
+	width:530px;
+	padding:10px;
+	height:12em;
+	margin:10px 0 5px 0;
+	font-size:100%;
+	background:#fffdea;
+	border:1px solid #dcd069;
+	color:#39340b;
+}
+
+.share-test-email .dialog-tray {
+	text-align:left;
+}
+
+.generic_dialog {
+	height:0;
+	left:0;
+	overflow:visible;
+	position:fixed; /*dw*/
+	top:0;
+	width:100%;
+	z-index:101;
+}
+
+#bck {
+	left:0;
+	position:absolute;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:90;
+	background-color:#000;
+	position:fixed; /*dw*/
+}
+
+#generic_dialog_iframe {
+	left:0;
+	position:absolute;
+	top:0;
+	z-index:3;
+}
+
+.generic_dialog .generic_dialog_popup {
+	height:0;
+	overflow:visible;
+	position:relative;
+}
+
+.generic_dialog div.dialog_loading {
+	background-color:#F2F2F2;
+	border:1px solid #606060;
+	font-size:24px;
+	padding:10px;
+}
+
+#generic_dialog_overlay {
+	display:block;
+	left:0;
+	position:absolute;
+	top:0;
+	width:100%;
+	z-index:100;
+}
+
+.dialog_body .dialog_content_img {
+	float:left;
+	margin-right:15px;
+}
+
+.dialog_body .dialog_content_txt {
+	float:left;
+	padding-bottom:5px;
+	width:300px;
+}
+
+.dialog_body .dialog_content_body {
+	padding-bottom:13px;
+}
+
+.dialog_body .form_label {
+	padding-right:5px;
+}
+
+.dark_dialog_overlay {
+	background-image:url(facebook-overlay.png);
+	background-repeat:repeat;
+}
+
+* html .dark_dialog_overlay {
+	background-color:transparent;
+	background-image:url(blank.gif);
+}
+
+.full_bleed .pop_dialog_table td.pop_content .dialog_body {
+	padding:0;
+}
+
+table.pop_dialog_table {
+	border-collapse:collapse;
+	direction:ltr;
+	margin:auto;
+	table-layout:fixed;
+	width:465px;
+}
+
+td.pop_topleft, td.pop_topright, td.pop_bottomleft, td.pop_bottomright {
+	height:10px;
+	overflow:hidden;
+	padding:0 !important;
+	width:10px !important;
+}
+
+td.pop_topleft {
+	background:transparent url(./../../public/images/facebook-pop-dialog-sprite.png) no-repeat scroll 0 0;
+}
+
+td.pop_topright {
+	background:transparent url(./../../public/images/facebook-pop-dialog-sprite.png) no-repeat scroll 0 -10px;
+}
+
+td.pop_bottomleft {
+	background:transparent url(./../../public/images/facebook-pop-dialog-sprite.png) no-repeat scroll 0 -20px;
+}
+
+td.pop_bottomright {
+	background:transparent url(./../../public/images/facebook-pop-dialog-sprite.png) no-repeat scroll 0 -30px;
+}
+
+td.pop_top, td.pop_bottom {
+	background:transparent url(./../../public/images/facebook-pop-dialog-sprite.png) repeat-x scroll 0 -40px;
+}
+
+td.pop_side {
+	background:transparent url(./../../public/images/facebook-pop-dialog-sprite.png) repeat-y scroll -10px 0;
+}
+
+td.pop_content {
+	background-color:white;
+	direction:ltr;
+	padding:0;
+}
+
+.pop_dialog_rtl td.pop_content {
+	direction:rtl;
+}
+
+td.pop_content h2.dialog_title {
+	background:#6D84B4 none repeat scroll 0 0;
+	border:1px solid #3B5998;
+	color:white;
+	font-size:14px;
+	font-weight:bold;
+	margin:0;
+}
+
+td.pop_content h2.dialog_loading {
+	background:#6D84B4 url(facebook-indicator_white_small.gif) no-repeat scroll 400px 10px;
+	padding-right:40px;
+}
+
+td.pop_content h2 span {
+	display:block;
+	padding:4px 10px 5px;
+}
+
+td.pop_content .dialog_content {
+	background:#FFFFFF none repeat scroll 0 0;
+	border-color:#555555;
+	border-style:solid;
+	border-width:0 1px 1px;
+}
+
+td.pop_content .dialog_body {
+	border-bottom:1px solid #CCCCCC;
+	padding:10px;
+}
+
+td.pop_content .dialog_summary {
+	background:#F2F2F2 none repeat scroll 0 0;
+	border-bottom:1px solid #CCCCCC;
+	padding:8px 10px;
+}
+
+td.pop_content .dialog_buttons {
+	background:#F2F2F2 none repeat scroll 0 0;
+	padding:8px;
+	text-align:center;
+}
+
+td.pop_content .dialog_buttons input {
+	margin-left:5px;
+}
+
+td.pop_content .dialog_buttons_msg {
+	float:left;
+	padding:5px 0 0;
+}
+
+td.pop_content .dialog_footer {
+	background:#F2F2F2 none repeat scroll 0 50%;
+}
+
+/* david walsh custom */
+#² {
+	display:none;
+}
+
+.info {
+	width:280px;
+	float:left;
+	font-size:11px;
+	color:#666;
+}
+
+.info b {
+	color:#000;
+}
+
+.image {
+	width:200px;
+	float:left;
+	margin-right:10px;
+}
+
+a {
+	color:#CCC;
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+#bodybody {
+	font: x-small sans-serif;
+	background: #f9f9f9 url(http://www.progamemap.com/wiki/skins/monobook/headbg.jpg) 0 0 no-repeat;
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+
+.input-warn, .input-green, .input-checkbox, input.reg_ {
+	background : #fff;
+	border : 1px solid #9b9b9b;
+	color : #000;
+	font-family : verdana, helvetica, sans-serif;
+	font-size : 11px;
+	margin : 5px;
+	padding : 2px;
+	vertical-align : middle;
+}
+
+.input-checkbox {
+	border : none;
+}
+
+.input-warn, .input-warn-content {
+	border : 1px solid #c00;
+	display:none;
+}
+
+.input-ok, .input-ok-content {
+	border : 1px solid #0c0;
+}
+
+.input-warn-content {
+	padding : 4px;
+	margin : 4px;
+	background-color : #fcc;
+}
+
+.input-ok-content {
+	padding : 4px;
+	margin : 4px;
+	background-color : #cfc;
+}
+
+.input-text {
+	color : #900;
+}
+
+input.button {
+	margin : 0;
+	width : auto;
+	cursor : pointer;
+}
+
+.log_ {
+	font-family: Arial;
+	color: #000000;
+	background-color:#ffffff;
+	border: #999999 1px solid;
+	font-size: 9pt;
+}
+
+A.liengris:link {
+	text-decoration:none;
+	color:#666666;
+	font-size: 12px;
+}
+
+A.liengris:visited {
+	text-decoration:none;
+	color:#666666;
+	font-size: 12px;
+}
+
+A.liengris:active {
+	text-decoration:none;
+	font-size: 12px;
+}
+
+A.liengris:hover {
+	text-decoration:underline;
+	color:#666666;
+	font-size: 12px;
+}
+
+A.lienvideos:link {
+	text-decoration:none;
+	color:#d60012;
+}
+
+A.lienvideos:visited {
+	text-decoration:none;
+	color:#d60012;
+}
+
+A.lienvideos:active {
+	text-decoration:none;
+}
+
+A.lienvideos:hover {
+	text-decoration:underline;
+	color:#d60012;
+}
+
+A.lienvideos:link {
+	text-decoration:none;
+	color:#d60012;
+}
+
+A.lienvideos:visited {
+	text-decoration:none;
+	color:#d60012;
+}
+
+A.lienvideos:active {
+	text-decoration:none;
+}
+
+A.lienvideos:hover {
+	text-decoration:underline;
+	color:#d60012;
+}
+
+A.lienlive:link {
+	text-decoration:none;
+	color:#0079BB;
+	font-size: 12px;
+}
+
+A.lienlive:visited {
+	text-decoration:none;
+	color:#0079BB;
+	font-size: 12px;
+}
+
+A.lienlive:active {
+	text-decoration:none;
+	font-size: 12px;
+}
+
+A.lienlive:hover {
+	text-decoration:underline;
+	color:#0079BB;
+	font-size: 12px;
+}
+
+A.lienlivep:link {
+	text-decoration:none;
+	color:#0079BB;
+	font-size: 11px;
+}
+
+A.lienlivep:visited {
+	text-decoration:none;
+	color:#0079BB;
+	font-size: 11px;
+}
+
+A.lienlivep:active {
+	text-decoration:none;
+	font-size: 11px;
+}
+
+A.lienlivep:hover {
+	text-decoration:underline;
+	color:#0079BB;
+	font-size: 11px;
+}
+
+A.lienshop:link {
+	text-decoration:none;
+	color:#ed0075;
+	font-size: 12px;
+}
+
+A.lienshop:visited {
+	text-decoration:none;
+	color:#ed0075;
+	font-size: 12px;
+}
+
+A.lienshop:active {
+	text-decoration:none;
+	font-size: 12px;
+}
+
+A.lienshop:hover {
+	text-decoration:underline;
+	color:#ed0075;
+	font-size: 12px;
+}
+
+A.lienrenc:link {
+	text-decoration:none;
+	color:#6f9600;
+	font-size: 12px;
+}
+
+A.lienrenc:visited {
+	text-decoration:none;
+	color:#6f9600;
+	font-size: 12px;
+}
+
+A.lienrenc:active {
+	text-decoration:none;
+	font-size: 12px;
+}
+
+A.lienrenc:hover {
+	text-decoration:underline;
+	color:#6f9600;
+	font-size: 12px;
+}
+
+A.lienshopm:link {
+	text-decoration:none;
+	color:#ba005e;
+	font-size: 12px;
+	font-weight:bold;
+}
+
+A.lienshopm:visited {
+	text-decoration:none;
+	color:#ba005e;
+	font-size: 12px;
+	font-weight:bold;
+}
+
+A.lienshopm:active {
+	text-decoration:none;
+	font-size: 12px;
+}
+
+A.lienshopm:hover {
+	text-decoration:underline;
+	color:#ba005e;
+	font-size: 12px;
+	font-weight:bold;
+}
+
+A.lienshopp:link {
+	text-decoration:none;
+	color:#ff0066;
+	font-size: 11px;
+	font-weight:bold;
+}
+
+A.lienshopp:visited {
+	text-decoration:none;
+	color:#ff0066;
+	font-size: 11px;
+	font-weight:bold;
+}
+
+A.lienshopp:active {
+	text-decoration:none;
+	font-size: 11px;
+}
+
+A.lienshopp:hover {
+	text-decoration:underline;
+	color:#ff0066;
+	font-size: 11px;
+	font-weight:bold;
+}
+
+A.lienshoptp:link {
+	text-decoration:none;
+	color:#ff0066;
+	font-weight:bold;
+}
+
+A.lienshoptp:visited {
+	text-decoration:none;
+	color:#ff0066;
+	font-weight:bold;
+}
+
+A.lienshoptp:active {
+	text-decoration:none;
+}
+
+A.lienshoptp:hover {
+	text-decoration:underline;
+	color:#ff0066;
+	font-weight:bold;
+}
+
+A.lienmenu:link {
+	text-decoration:none;
+	color:#dddddd;
+	font-size: 11px;
+	font-weight:bold;
+}
+
+A.lienmenu:visited {
+	text-decoration:none;
+	color:#dddddd;
+	font-size: 11px;
+	font-weight:bold;
+}
+
+A.lienmenu:active {
+	text-decoration:none;
+	font-size: 11px;
+}
+
+A.lienmenu:hover {
+	text-decoration:underline;
+	color:#dddddd;
+	font-size: 11px;
+	font-weight:bold;
+}
+
+A.liencat:link {
+	text-decoration:none;
+	color:#ffffff;
+	font-size: 11px;
+}
+
+A.liencat:visited {
+	text-decoration:none;
+	color:#ffffff;
+	font-size: 11px;
+}
+
+A.liencat:active {
+	text-decoration:none;
+	font-size: 11px;
+}
+
+A.liencat:hover {
+	text-decoration:underline;
+	color:#ffffff;
+	font-size: 11px;
+}
+
+A.lientel:link {
+	text-decoration:none;
+	color:#FFFFFF;
+	font-size: 11px;
+}
+
+A.lientel:visited {
+	text-decoration:none;
+	color:#FFFFFF;
+	font-size: 11px;
+}
+
+A.lientel:active {
+	text-decoration:none;
+	font-size: 11px;
+}
+
+A.lientel:hover {
+	text-decoration:underline;
+	color:#FFFFFF;
+	font-size: 11px;
+}
+
+A.liencgv:link {
+	text-decoration:underline;
+	color:#000000;
+}
+
+A.liencgv:visited {
+	text-decoration:underline;
+	color:#000000;
+}
+
+A.liencgv:active {
+	text-decoration:underline;
+}
+
+A.liencgv:hover {
+	text-decoration:none;
+	color:#000000;
+}
+
+A.lientitre:link {
+	text-decoration:none;
+	color:#ffffff;
+	font-size: 12px;
+	font-weight:bold;
+}
+
+A.lientitre:visited {
+	text-decoration:none;
+	color:#ffffff;
+	font-size: 12px;
+	font-weight:bold;
+}
+
+A.lientitre:active {
+	text-decoration:none;
+	font-size: 12px;
+}
+
+A.lientitre:hover {
+	text-decoration:underline;
+	color:#ffffff;
+	font-size: 12px;
+	font-weight:bold;
+}
+
+
+
+.compteur {
+	font-size: 22px;
+	color: #FFFFFF;
+	letter-spacing: 0.05em;
+}
+
+.menutitre {
+	color:#ffffff;
+	font-size: 11px;
+	font-weight:bold;
+}
+
+.titrebox {
+	color:#ffffff;
+	font-size: 12px;
+	font-weight:bold;
+}
+
+.pageshop {
+	color:#dddddd;
+	font-size: 11px;
+}
+
+.panierss {
+	color:#ed0075;
+	font-size: 15px;
+	font-weight:bold;
+}
+
+.paniert {
+	color:#ed0075;
+	font-size: 16px;
+	font-weight:bold;
+}
+
+.description {
+	COLOR: #333333;
+	FONT-SIZE: 11px;
+}
+
+.tgrand {
+	FONT-SIZE: 18px;
+}
+
+.grand {
+	FONT-SIZE: 13px;
+}
+
+.petit {
+	FONT-SIZE: 11px;
+}
+
+.tpetit {
+	FONT-SIZE: 10px;
+}
+
+.date {
+	COLOR: #dddddd;
+	FONT-SIZE: 11px;
+}
+
+.datet {
+	COLOR: #dddddd;
+	FONT-SIZE: 12px;
+	font-weight:bold;
+}
+
+.def {
+	COLOR: #666666;
+	FONT-SIZE: 11px;
+}
+
+.blanc {
+	COLOR: #FFFFFF;
+}
+
+.blancg {
+	COLOR: #FFFFFF;
+	font-weight:bold;
+}
+
+.article {
+	COLOR: #f09cc7;
+	FONT-SIZE: 12px;
+	font-weight:bold;
+}
+
+.stock {
+	COLOR: #0dba00;
+	FONT-SIZE: 11px;
+	font-weight:bold;
+}
+
+.delai {
+	COLOR: #0dba00;
+	font-weight:bold;
+}
+
+.note {
+	COLOR: #333333;
+	font-weight:bold;
+}
+
+.notet {
+	COLOR: #FFFFFF;
+	font-weight:bold;
+	FONT-SIZE: 11px;
+}
+
+.prix {
+	COLOR: #FFFFFF;
+	font-weight:bold;
+}
+
+.prixn {
+	COLOR: #000000;
+	font-weight:bold;
+	FONT-SIZE: 13px;
+}
+
+.noir {
+	COLOR: #000000
+}
+
+.gris {
+	COLOR: #666666
+}
+
+.grisc {
+	COLOR: #CCCCCC
+}
+
+.grisf {
+	COLOR: #333333
+}
+
+.rouge {
+	COLOR: #d60012
+}
+
+.orange {
+	color: #F93
+}
+
+.vert {
+	COLOR: #009900
+}
+
+.rougej {
+	COLOR: #CC0000
+}
+
+.bleuj {
+	COLOR: #247AA8
+}
+
+.rosej {
+	COLOR: #E30664
+}
+
+.vertj {
+	COLOR: #78AF3A
+}
+
+.joing {
+	COLOR: #000000;
+	FONT-SIZE: 13px;
+	FONT-FAMILY: Verdana;
+}
+
+.joinr {
+	COLOR: #CC0000;
+	FONT-SIZE: 13px;
+	FONT-FAMILY: Verdana;
+}
+
+.champ {
+	font-family: Arial;
+	color: #000000;
+	background-color:#ffffff;
+	border: #999999 1px solid;
+	font-size: 9pt;
+}
+
+.menumembre {
+	COLOR: #c10000;
+	font-weight:bold;
+	FONT-SIZE: 12px;
+}
+
+.green {
+	color:#82d8ab
+}
+
+.homepage_section_warning, .homepage_section {
+	background-color : #344966;
+	font-size : 14px;
+	color : #fff;
+	padding : 7px;
+}
+
+.homepage_section_warning {
+	background-color : #66343e;
+}
+
+.homepage_pane_warning_border, .homepage_pane_warning, .homepage_pane_border, .homepage_pane {
+	background-color : #e2e2e0;
+	padding : 4px;
+}
+
+.homepage_pane_warning_border {
+	border : 1px solid #66343e;
+}
+
+.homepage_pane_border {
+	border : 1px solid #344966;
+}
+
+.homepage_pane_warning_border, .homepage_pane_warning {
+	background-color : #f3e2e0;
+}
+
+.homepage_sub_header {
+	padding : 8px;
+	background-color : #a8afbd;
+	color : #3b424c;
+	font-weight : bold;
+	font-size : 12px;
+}
+
+.homepage_sub_row {
+	background-color : #e6ebf1;
+	padding : 6px;
+	border-bottom : 1px solid #d3dae4;
+}
+
+.homepage_sub_row_2 {
+	background-color : #d3dae4;
+	padding : 6px;
+	border-bottom : 1px solid #b3bbc8;
+}
+
+.homepage_sub_row_3 {
+	background-color : #e2e2e0;
+	padding : 6px;
+	border-bottom : 1px solid #b3bbc8;
+}
+
+.homepage_border {
+	border : 1px solid #7f8ca0;
+}
+
+.menuouterwrap {
+	border : 1px solid #5d789c;
+	background-color : #eff3f7;
+	margin : 0 4px 0 4px;
+	-moz-border-radius :  5px;
+}
+
+.menucatwrap {
+	font-size : 12px;
+	font-weight : bold;
+	color : #20476d;
+	margin : 4px;
+	padding-bottom : 4px;
+	border-bottom : 1px solid #c7c7c7;
+}
+
+.menulinkwrap {
+	margin : 2px;
+	padding-bottom : 3px;
+	border-bottom : 1px solid #e3e3e3;
+}
+
+.menulinkwrap a:link, .menulinkwrap a:visited, .menulinkwrap a:active {
+	color : #000;
+}
+
+.menulinkwrap a:hover {
+	color : #e69f06;
+}
+
+#common_actions div a {
+	display : block;
+	font-size : 12px;
+	font-weight : bold;
+	text-decoration : none;
+	padding : 3px;
+	border : 1px solid #e2e2e0;
+	color : #343434;
+}
+
+#common_actions div a:hover {
+	background-color : #ffffff;
+	border : 1px solid #acacac;
+	color : #343434;
+}
+
+#common_actions img {
+	vertical-align : middle;
+}
+
+.homepage_border a:link, .homepage_border a:visited, .homepage_border a:active {
+	background-color : transparent;
+	color : #000;
+	text-decoration : none;
+}
+
+.homepage_border a:hover {
+	background-color : transparent;
+	color : #465584;
+	text-decoration : underline;
+}
+
+
+
+#footfoot {
+	FONT-SIZE: 12px;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+
+
+.warningBox {
+	background:#FFF;
+	padding:10px;
+	position:relative;
+	display:block;
+	border:1px #666 solid;
+	-moz-border-radius: 5px;
+	width:925px;
+	text-align:left;
+}
+
+#prettysearch {
+	float:right;
+}
+
+#prettysearch input {
+	FONT-SIZE: 11px;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	color:#666;
+	padding:3px 4px 0 20px;
+	margin:3px 0 3px 0;
+	width:115px;
+	height:18px;
+	border:0;
+	background:url(http://www.progamemap.com/public/images/searchfield.png) no-repeat;
+}
+
+.post-image {
+	background : #e6e9ea;
+	padding : 8px;
+	border : 1px solid #ccc;
+	width : 665px;
+	border-bottom : none;
+	padding-bottom : 0;
+}
+
+.post-image img {
+	border : 1px solid #fff;
+}
+
+.post-wrap {
+	background : #e6e9ea;
+	padding : 8px;
+	border : 1px solid #ccc;
+	border-top : none;
+}
+
+p.button2 {
+	margin : 0;
+	padding : 0;
+}
+
+.button2 a:link, .button2 a:visited {
+	float : right;
+	background : #e6e9ea;
+	font-size : 11px;
+	text-transform : uppercase;
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	padding : 0 1.2em 0 1.2em;
+	color : #000;
+	border : 1px solid #ccc;
+	margin-bottom : 10px;
+	margin-right : -15px;
+}
+
+.button2 a:hover {
+	color : #c83913;
+	text-decoration : none;
+}
+
+.button2 a:active {
+	color : #fff;
+	text-decoration : none;
+}
+
+.button2_l a:link, .button2_l a:visited {
+	background : #db3e14 url(images/more_bg_hover_l.png) no-repeat 15% 50%;
+	font-size : 11px;
+	text-transform : uppercase;
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	padding : 0.5em 1em 0.5em 2em;
+	color : #fff;
+}
+
+.button2_l a:hover {
+	color : #ffe2da;
+	background : #db3e14 url(images/more_bg_l.png) no-repeat 15% 50%;
+	text-decoration : none;
+}
+
+.button2_l a:active {
+	color : #fff;
+	text-decoration : none;
+}
+
+.b_push a {
+	margin-left : 5px;
+}
+
+.clear {
+	clear : both;
+	display : block;
+	overflow : hidden;
+	visibility : hidden;
+	width : 0;
+	height : 0;
+}
+
+#content a {
+	color:#000;
+}
+
+.bookmark-this {
+	width : 70px;
+	height : 67px;
+	position : relative;
+	background : transparent url(http://dev.mashable.com/wp-content/plugins/wp-digg-this/xtra/delicious-background.gif) no-repeat top left;
+	font-family : Arial, sans-serif;
+	padding : 13px 0 0 14px;
+}
+
+.bookmark-this .rank {
+	font-size : 19px;
+	color : #5b5959;
+	position : absolute;
+	top : 14px;
+	right : 15px;
+}
+
+.bookmark-this a {
+	font-size : 10px;
+	position : absolute;
+	top : 40px;
+	left : 14px;
+	line-height : 1.3;
+	color : #5b5959;
+}
+
+.entry_meta a {
+	color:#C60;
+}
+
+.entry {
+	float: left;
+	display: block;
+	padding: 40px;
+	width: 617px;
+}
+
+.entry ul {
+	padding-bottom: 20px;
+	padding-top: 3px;
+}
+
+.entry ul li {
+	padding: 4px 0 2px 0;
+	padding-left: 35px;
+	background: url(http://www.progamemap.com/public/images/post-li.gif) no-repeat 10px 9px;
+}
+
+.entry li > ul {
+	padding-bottom: 0px;
+}
+
+.entry ol {
+	margin-left: 25px;
+	padding-left: 10px;
+	padding-bottom: 20px;
+	padding-top: 3px;
+}
+
+.entry ol li {
+	padding: 4px 0 2px 0px;
+	list-style: decimal;
+}
+
+.entry li > ol {
+	padding-bottom: 0px;
+}
+
+.top-image {
+	float: right;
+	padding-left: 20px;
+	margin-bottom: 20px;
+	background-color: #f4f4f4;
+}
+
+.postimage {
+	float: right;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	background-color: #f4f4f4;
+	border: 1px solid #a5a5a5;
+	padding: 1px;
+}
+
+.postimage img {
+	background: #e0e0e0;
+	padding: 9px;
+	float: right;
+}
+
+.postimage-left {
+	float: left;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	background-color: #f4f4f4;
+	border: 1px solid #a5a5a5;
+	padding: 1px;
+}
+
+.postimage-left img {
+	background: #e0e0e0;
+	padding: 9px;
+	float: left;
+}
+
+.postimage-center {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	border: 1px solid #a5a5a5;
+	padding: 1px;
+	width: auto;
+ background: #e0e0e0 urlhttp://www.progamemap.com/public/images/white_line.png) repeat-x 0 0px;
+}
+
+.postimage-center img {
+	background: #e0e0e0;
+	padding: 9px;
+	margin: 0 auto;
+	display: block;
+	max-width: 595px;
+}
+
+.postmetadata {
+	position: relative;
+	background: #ededed url(http://www.progamemap.com/public/images/post-meta.png) no-repeat 0 0;
+	float: left;
+	display: block;
+	width: 617px;
+	border-top: 1px solid #d5d5d5;
+	border-bottom: 1px solid #d5d5d5;
+	padding: 11px 40px 10px 40px;
+	font-size: 11px;
+	line-height: 18px;
+}
+
+.the_author {
+	position: absolute;
+	top: 10px;
+	right: 40px;
+	line-height: 20px;
+}
+
+.the_author .avatar {
+	float: left;
+	margin-right: 7px;
+}
+
+.the_author h4 {
+	float: left;
+	line-height: 22px;
+	font-size: 16px;
+	text-transform: none;
+	color: #656565;
+	padding-top: 0;
+}
+
+.the_author h4 a {
+	color: #656565;
+}
+
+

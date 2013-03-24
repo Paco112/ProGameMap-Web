@@ -1,0 +1,1 @@
+window.addEvent("domready",function(){$$("a.share").each(function(c){var d=c.getParent();var b=d.getElements("div.share-hover")[0];b.set("opacity",0);c.addEvent("mouseenter",function(){b.setStyle("display","block").fade("in")});b.addEvent("mouseleave",function(){b.fade("out")});d.addEvent("mouseleave",function(){b.fade("out")})})});

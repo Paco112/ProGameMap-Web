@@ -1,0 +1,95 @@
+--------------------------------------------------------------------------------
+ Contributors to the Plus version of phpMyChat (modifications, fixes, additions)
+--------------------------------------------------------------------------------
+Important: If you think I forgot to mention your contribution, please send me an email
+with your contribution and personal data you agree to share (using the template bellow). Thank you!
+
+Pete Soheil (aka Digioz Multimedia) webmaster@digioz.com www.digioz.com
+- Made Configuration System database based (as opposed to config file based.
+- Added web admin interface for changing settings of chatroom over the web
+- Added search feature to admin panel to allow search by:
+	* Username
+	* IP Address
+	* Permissions
+	* Gender
+- Added admin Chat View Page (Chat Extras) for admin panel, to allow admin to see all private messages posted in chatrooms.
+
+Alexander Eisele <xaex@xeax.de>
+	- Links posting protection through popup parser
+	- Loader/messages frame changed to table format for better alignment
+	- Wrap at 40 chars the messages without spaces
+
+Thomas Pschernig <tpsde1970@aol.com>
+	- Installer script
+	- MyNukeChat integration module for PHP-Nuke - to be included
+
+Yet need to be writen!!!
+
+Thank you very much for all the moders whose work is included in this version. Their credits should and will go to this place in the next release packages.
+Special thanks to Pete (aka Digioz), Dave, Mei Yung, Jackee, Alex, Auggy, Cissy, Thomas, BluntDog and all for their personal support, ideas, suggestions, complaints and thoughts.
+I really appreciate it!
+My best regards,
+Ciprian Murariu - the Integrator
+
+
+Localization of the Plus version
+""""""""""""""""""""""""""""""""
+
+ Argentinian		: Matias Olivera <matiolivera@yahoo.com>
+ Dutch				: Danny <danny74@zonnet.nl> & Bert Moorlag <berbia@hotmail.com>
+ English			: Nicolas Hoizey <nhoizey@phpheaven.net> & Ciprian Murariu <ciprianmp@yahoo.com>
+ French				: Drazen McLukic - Leloup <leloup@le-loup.info> & Christophe Luke <christophe.lucsky@gmail.com>
+ German				: Alexander Eisele <xaex@xeax.de> & Thomas Pschernig <tpsde1970@aol.com>
+ Italian			: Mike Mikius <mikiusss@yahoo.com> & Luciano Cataldo <lucianocataldo@gmail.com>
+ Romanian			: Radu Swider <swidera@satline.ro>, Ciprian Popovici-Oana <floppy@kermit.cs.pub.ro> & Ciprian Murariu <ciprianmp@yahoo.com>
+ Spanish			: Roxana Castañeda <roxminu@yahoo.com> & Shelly Noyes <shelly.noyes@gmail.com>
+ Swedish			: Heikki <heikki@yttervik.be>
+ Turkish			: Volkan Övün <vovun@hotmail.com>
+ Vietnamese			: Marshall <hellomarshal_lookatme@netzero.net>
+
+
+Core developers of the standard version
+""""""""""""""""""""""""""""""""""""""""
+
+Nicolas Hoizey <nhoizey@phpheaven.net>
+ Initial concepts and design
+ Bugs fix
+ Documentation
+
+Loďc Chapeaux <lolo@phpheaven.net>
+ JavaScript enhancements
+ IRC-style commands
+ Easy installation process
+ Bugs fix
+
+Matthieu Belge <mbelge@free.fr>
+ Great Perl-like regular expressions
+ Benchmarks
+
+Martin Dvorak <jezek2@penguin.cz>
+ HTML tags parsing in messages
+ User registration
+ Administration
+ Commands
+ Bugs fix
+
+Christian Hacker <c.hacker@dreamer-chat.de>
+ Mail feature for the administrator
+
+Etienne Gagnon <tinou@tinou.net>
+ Database design and optimization
+
+Sergey I. Golod <rover@tob.ru>
+ Security analysis
+
+Database Specific Code
+""""""""""""""""""""""
+
+Nicolas Hoizey <nhoizey@phpheaven.net>
+ MySQL library
+
+Martin Dvorak <jezek2@penguin.cz>
+ PostgreSQL library
+
+J. "Guli" Mikulas <guli1@email.cz>
+ ODBC library
